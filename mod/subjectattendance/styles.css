@@ -1,0 +1,108 @@
+.path-mod-subjectattendance .attendance-select {
+    width: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+.path-mod-subjectattendance .attendance-col-select {
+    width: 4rem;
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.path-mod-subjectattendance .attendance-select.present {
+    background-color: #c8e6c9;
+}
+
+.path-mod-subjectattendance .attendance-select.new {
+    background-color: #90caf9;
+}
+
+.path-mod-subjectattendance .attendance-select.absent {
+    background-color: #ffcdd2;
+}
+
+.path-mod-subjectattendance .attendance-select.partial {
+    background-color: #fff9c4;
+}
+
+.path-mod-subjectattendance .attendance-summary,
+.path-mod-subjectattendance .attendance-total-summary {
+    width: 9rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    display: flex;
+}
+
+.path-mod-subjectattendance .attendance-percents {
+    width: 9rem;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+}
+
+.path-mod-subjectattendance .attendance-row-summary {
+    width: 5rem;
+    text-align: center;
+    display: flex;
+    font-size: 0.85rem;
+}
+
+.path-mod-subjectattendance .attendance-row1a {
+    font-weight: bold;
+    background: #c8e6c9;
+    color: #000;
+    flex: 1;
+}
+
+.path-mod-subjectattendance .attendance-row1b {
+    font-weight: normal;
+    flex: 1;
+}
+
+.path-mod-subjectattendance .attendance-row2a {
+    font-weight: bold;
+    background: #fff9c4;
+    color: #000;
+    flex: 1;
+}
+
+.path-mod-subjectattendance .attendance-row2b {
+    font-weight: normal;
+    flex: 1;
+}
+
+.path-mod-subjectattendance .attendance-row3a {
+    font-weight: bold;
+    background: #ffcdd2;
+    color: #000;
+    flex: 1;
+}
+
+.path-mod-subjectattendance .attendance-row3b {
+    font-weight: normal;
+    flex: 1;
+}
+
+:root {
+    --sticky-col-bg: #fafafa;
+    --sticky-col-divider: #ccc;
+}
+.theme-dark {
+    --sticky-col-bg: #222;
+    --sticky-col-divider: #333;
+}
+
+.path-mod-subjectattendance .first-column-sticky td:first-child,
+.path-mod-subjectattendance .first-column-sticky th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: var(--sticky-col-bg);
+    z-index: 4;
+}
+
+.path-mod-subjectattendance .first-column-sticky tbody tr.lastrow td:first-child {
+    box-shadow: none;
+}
