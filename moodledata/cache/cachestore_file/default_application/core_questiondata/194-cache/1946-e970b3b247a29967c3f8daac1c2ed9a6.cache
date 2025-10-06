@@ -1,0 +1,147 @@
+O:8:"stdClass":27:{s:2:"id";s:4:"1946";s:8:"category";s:3:"326";s:6:"parent";s:1:"0";s:4:"name";s:6:"Q51-11";s:12:"questiontext";s:377:"<p>You are given a network of distribution centers represented as a graph. Each distribution center is a node, and each route between centers is an edge with a specific travel time (weight). The logistics company wants to find the shortest travel times from a given central distribution center (starting node) to all other distribution centers. <strong>[Microsoft]</strong></p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:7:"penalty";d:0;s:5:"qtype";s:10:"coderunner";s:6:"length";s:1:"1";s:5:"stamp";s:37:"lms.velandev.life+250824050414+Pgc7nu";s:11:"timecreated";s:10:"1756011854";s:12:"timemodified";s:10:"1756011854";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:8:"idnumber";N;s:9:"contextid";s:3:"455";s:6:"status";s:5:"ready";s:9:"versionid";s:4:"1946";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"1932";s:14:"categoryobject";O:8:"stdClass":9:{s:2:"id";s:3:"326";s:4:"name";s:23:"M5-D1- Coding Challenge";s:9:"contextid";s:3:"455";s:4:"info";s:0:"";s:10:"infoformat";s:1:"0";s:5:"stamp";s:37:"lms.velandev.life+250824050414+WQ68Dr";s:6:"parent";s:3:"324";s:9:"sortorder";s:3:"999";s:8:"idnumber";N;}s:7:"options";O:8:"stdClass":46:{s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"0";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:1:"0";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:16:"answerboxcolumns";s:3:"100";s:13:"answerpreload";s:415:"class PriorityQueue {
+    constructor() {
+      this.values = [];
+    }
+  
+    enqueue(val, priority) {
+      this.values.push({ val, priority });
+      this.sort();
+    }
+  
+    dequeue() {
+      return this.values.shift();
+    }
+  
+    sort() {
+      this.values.sort((a, b) => a.priority - b.priority);
+    }
+  }
+  
+  function dijkstra(graph, startNode) {
+    /* Type your code here */
+  }
+";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:188:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:1307:"class PriorityQueue {
+    constructor() {
+      this.values = [];
+    }
+  
+    enqueue(val, priority) {
+      this.values.push({ val, priority });
+      this.sort();
+    }
+  
+    dequeue() {
+      return this.values.shift();
+    }
+  
+    sort() {
+      this.values.sort((a, b) => a.priority - b.priority);
+    }
+  }
+  
+  function dijkstra(graph, startNode) {
+    const distances = {};
+    const priorityQueue = new PriorityQueue();
+    const visited = new Set();
+  
+    // Initialize distances
+    for (let node in graph) {
+      if (node === startNode) {
+        distances[node] = 0;
+        priorityQueue.enqueue(node, 0);
+      } else {
+        distances[node] = Infinity;
+        priorityQueue.enqueue(node, Infinity);
+      }
+    }
+  
+    while (priorityQueue.values.length) {
+      const { val: currentNode } = priorityQueue.dequeue();
+      
+      if (visited.has(currentNode)) continue;
+      visited.add(currentNode);
+  
+      for (let neighbor in graph[currentNode]) {
+        const distance = distances[currentNode] + graph[currentNode][neighbor];
+  
+        if (distance < distances[neighbor]) {
+          distances[neighbor] = distance;
+          priorityQueue.enqueue(neighbor, distance);
+        }
+      }
+    }
+  
+    return distances;
+  }";s:14:"validateonsave";s:1:"1";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"1";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"None";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:2:"{}";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:5:"10240";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"1";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:1;s:9:"testcases";a:5:{i:0;O:8:"stdClass":11:{s:2:"id";s:4:"1154";s:10:"questionid";s:4:"1946";s:8:"testtype";s:1:"0";s:8:"testcode";s:225:"const graph = {
+    A: { B: 1, C: 4 },
+    B: { A: 1, C: 2, D: 5 },
+    C: { A: 4, B: 2, D: 1 },
+    D: { B: 5, C: 1 }
+  };
+console.log("The shortest path from node A to other nodes are :")
+console.log(dijkstra(graph, 'A')); ";s:5:"stdin";s:0:"";s:8:"expected";s:77:"The shortest path from node A to other nodes are :
+{ A: 0, B: 1, C: 3, D: 4 }";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"1";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:1;O:8:"stdClass":11:{s:2:"id";s:4:"1155";s:10:"questionid";s:4:"1946";s:8:"testtype";s:1:"0";s:8:"testcode";s:250:"const graph = {
+A: { B: 2, C: 5, D: 1 },
+B: { A: 2, C: 3, E: 4 },
+C: { A: 5, B: 3, D: 2, E: 1 },
+D: { A: 1, C: 2, E: 3 },
+E: { B: 4, C: 1, D: 3 }
+};
+console.log("The shortest path from node C to other nodes are :")
+console.log(dijkstra(graph, 'C')); ";s:5:"stdin";s:0:"";s:8:"expected";s:83:"The shortest path from node C to other nodes are :
+{ A: 3, B: 3, C: 0, D: 2, E: 1 }";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:2;O:8:"stdClass":11:{s:2:"id";s:4:"1156";s:10:"questionid";s:4:"1946";s:8:"testtype";s:1:"0";s:8:"testcode";s:281:"const graph = {
+    A: { B: 3, F: 7 },
+    B: { A: 3, C: 1, D: 2 },
+    C: { B: 1, D: 4, E: 5 },
+    D: { B: 2, C: 4, E: 1 },
+    E: { C: 5, D: 1, F: 6 },
+    F: { A: 7, E: 6 }
+};
+console.log("The shortest path from node F to other nodes are :")
+console.log(dijkstra(graph, 'F')); ";s:5:"stdin";s:0:"";s:8:"expected";s:90:"The shortest path from node F to other nodes are :
+{ A: 7, B: 9, C: 10, D: 7, E: 6, F: 0 }";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:3;O:8:"stdClass":11:{s:2:"id";s:4:"1157";s:10:"questionid";s:4:"1946";s:8:"testtype";s:1:"0";s:8:"testcode";s:281:"const graph = {
+    A: { B: 1, C: 3, E: 2 },
+    B: { A: 1, D: 4 },
+    C: { A: 3, D: 1, E: 5 },
+    D: { B: 4, C: 1, F: 2 },
+    E: { A: 2, C: 5, F: 3 },
+    F: { D: 2, E: 3 }
+};
+console.log("The shortest path from node B to other nodes are :")
+console.log(dijkstra(graph, 'B')); ";s:5:"stdin";s:0:"";s:8:"expected";s:89:"The shortest path from node B to other nodes are :
+{ A: 1, B: 0, C: 4, D: 4, E: 3, F: 6 }";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:4;O:8:"stdClass":11:{s:2:"id";s:4:"1158";s:10:"questionid";s:4:"1946";s:8:"testtype";s:1:"0";s:8:"testcode";s:281:"const graph = {
+    A: { B: 1, C: 3, E: 2 },
+    B: { A: 1, D: 4 },
+    C: { A: 3, D: 1, E: 5 },
+    D: { B: 4, C: 1, F: 2 },
+    E: { A: 2, C: 5, F: 3 },
+    F: { D: 2, E: 3 }
+};
+console.log("The shortest path from node E to other nodes are :")
+console.log(dijkstra(graph, 'E')); ";s:5:"stdin";s:0:"";s:8:"expected";s:89:"The shortest path from node E to other nodes are :
+{ A: 2, B: 3, C: 5, D: 5, E: 0, F: 3 }";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}}}s:5:"hints";a:0:{}s:9:"prototype";O:25:"qtype_coderunner_question":86:{s:2:"id";s:4:"2785";s:8:"category";s:1:"2";s:9:"contextid";s:1:"1";s:6:"parent";s:1:"0";s:5:"qtype";O:16:"qtype_coderunner":1:{s:14:" * fileoptions";a:3:{s:7:"subdirs";b:1;s:8:"maxfiles";i:-1;s:8:"maxbytes";i:0;}}s:4:"name";s:24:"BUILTIN_PROTOTYPE_nodejs";s:12:"questiontext";s:536:"<p>A JavaScript question type, run using nodejs. The
+test program to be executed starts with the student answer. That is followed
+by each of the test case codes in turn, with a separator string being printed
+between them. However, if there is any standard input present for any of the
+test cases, a separate test run will be done for each test case.</p><p>
+If there is a risk of side-effects from a test case affecting later test cases
+you can add standard input to any one of the test cases to force the one-run-per-test-case
+mode.</p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:6:"length";s:1:"1";s:7:"penalty";d:0;s:5:"stamp";s:37:"lms.velandev.life+250922115904+0z8ofh";s:8:"idnumber";N;s:11:"timecreated";s:10:"1758542344";s:12:"timemodified";s:10:"1758542344";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:5:"hints";a:0:{}s:6:"status";s:5:"ready";s:9:"versionid";s:4:"2785";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"2771";s:16:" * latestversion";N;s:12:"customfields";a:0:{}s:14:"shownumcorrect";b:0;s:9:"testcases";a:0:{}s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"1";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:15:"33.3, 66.7, ...";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:13:"answerpreload";s:0:"";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:179:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:0:"";s:14:"validateonsave";s:1:"0";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"0";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"twig";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:0:"";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:1:"0";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"0";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:1;s:7:"student";N;s:9:"prototype";N;s:26:"initialisationerrormessage";N;s:16:"cachedfuncparams";N;s:25:"cachedevaldtemplateparams";N;s:18:"mergeduiparameters";N;s:18:"templateparamsjson";N;s:10:"parameters";N;s:8:"stepinfo";N;s:7:"options";N;s:5:"isnew";N;s:7:"context";N;s:10:"questionid";N;s:16:"answerboxcolumns";s:3:"100";}}

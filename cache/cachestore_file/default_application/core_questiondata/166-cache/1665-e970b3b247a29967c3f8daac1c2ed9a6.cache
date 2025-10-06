@@ -1,0 +1,256 @@
+O:8:"stdClass":27:{s:2:"id";s:4:"1665";s:8:"category";s:3:"306";s:6:"parent";s:1:"0";s:4:"name";s:6:"Q12-20";s:12:"questiontext";s:464:"<p>Given two non-empty linked lists representing two positive integers, add the two numbers and return it as a linked list. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. <strong>[Amazon]</strong></p>
+<p>Example :</p>
+<ul>
+<li>Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)</li>
+<li>Output: 7 -&gt; 0 -&gt; 8</li>
+<li>Explanation: 342 + 465 = 80</li>
+</ul>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:7:"penalty";d:0;s:5:"qtype";s:10:"coderunner";s:6:"length";s:1:"1";s:5:"stamp";s:37:"lms.velandev.life+250824050413+5FBVvC";s:11:"timecreated";s:10:"1756011853";s:12:"timemodified";s:10:"1756011853";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:8:"idnumber";N;s:9:"contextid";s:3:"455";s:6:"status";s:5:"ready";s:9:"versionid";s:4:"1665";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"1651";s:14:"categoryobject";O:8:"stdClass":9:{s:2:"id";s:3:"306";s:4:"name";s:23:"M1-D2- Coding Challenge";s:9:"contextid";s:3:"455";s:4:"info";s:0:"";s:10:"infoformat";s:1:"0";s:5:"stamp";s:37:"lms.velandev.life+250824050413+VmNtaG";s:6:"parent";s:3:"304";s:9:"sortorder";s:3:"999";s:8:"idnumber";N;}s:7:"options";O:8:"stdClass":46:{s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"0";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:1:"0";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:16:"answerboxcolumns";s:3:"100";s:13:"answerpreload";s:1591:"class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    append(value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+            this.head = newNode;
+            return;
+        }
+        let current = this.head;
+        while (current.next) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+
+    printList() {
+        let current = this.head;
+        const result = [];
+        while (current) {
+            result.push(current.value);
+            current = current.next;
+        }
+        console.log(result.join(' -> '));
+    }
+}
+function addTwoNumbers(l1, l2) {
+    // TYpe your code here
+}
+
+/*
+// Example Usage
+let list1 = new LinkedList()
+let list2 = new LinkedList()
+
+const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+rl.question('',n1 => {
+    rl.question('',n2 => {
+        let num1 = n1.split(',').map(Number);
+        let num2 = n2.split(',').map(Number);
+
+        num1.forEach(digit => list1.append(digit));
+        num2.forEach(digit => list2.append(digit));
+    
+        console.log("List 1:");
+        list1.printList();
+
+        console.log("List 2:");
+        list2.printList();
+
+        let result = new LinkedList();
+        result.head = addTwoNumbers(list1, list2);
+        console.log("Output List :");
+        result.printList();
+        rl.close();
+    });
+});
+*/";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:773:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+let list1 = new LinkedList()
+let list2 = new LinkedList()
+
+const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+rl.question('',n1 => {
+    rl.question('',n2 => {
+        let num1 = n1.split(',').map(Number);
+        let num2 = n2.split(',').map(Number);
+
+        num1.forEach(digit => list1.append(digit));
+        num2.forEach(digit => list2.append(digit));
+    
+        console.log("List 1:");
+        list1.printList();
+
+        console.log("List 2:");
+        list2.printList();
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}
+rl.close();
+    });
+});";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:2140:"class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
+class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    append(value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+            this.head = newNode;
+            return;
+        }
+        let current = this.head;
+        while (current.next) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+
+    printList() {
+        let current = this.head;
+        const result = [];
+        while (current) {
+            result.push(current.value);
+            current = current.next;
+        }
+        console.log(result.join(' -> '));
+    }
+}
+function addTwoNumbers(l1, l2) {
+    let dummyHead = new Node(0);
+    let p = l1.head, q = l2.head, current = dummyHead;
+    let carry = 0;
+
+    while (p !== null || q !== null) {
+        let x = (p !== null) ? p.value : 0;
+        let y = (q !== null) ? q.value : 0;
+        let sum = carry + x + y;
+        carry = Math.floor(sum / 10);
+        current.next = new Node(sum % 10);
+        current = current.next;
+
+        if (p !== null) p = p.next;
+        if (q !== null) q = q.next;
+    }
+
+    if (carry > 0) {
+        current.next = new Node(carry);
+    }
+
+    return dummyHead.next;
+}
+
+/*
+// Example Usage
+let list1 = new LinkedList()
+let list2 = new LinkedList()
+
+const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+rl.question('',n1 => {
+    rl.question('',n2 => {
+        let num1 = n1.split(',').map(Number);
+        let num2 = n2.split(',').map(Number);
+
+        num1.forEach(digit => list1.append(digit));
+        num2.forEach(digit => list2.append(digit));
+    
+        console.log("List 1:");
+        list1.printList();
+
+        console.log("List 2:");
+        list2.printList();
+
+        let result = new LinkedList();
+        result.head = addTwoNumbers(list1, list2);
+        console.log("Output List :");
+        result.printList();
+        rl.close();
+    });
+});
+*/";s:14:"validateonsave";s:1:"1";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"1";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"None";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:2:"{}";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:5:"10240";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"1";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:1;s:9:"testcases";a:5:{i:0;O:8:"stdClass":11:{s:2:"id";s:3:"518";s:10:"questionid";s:4:"1665";s:8:"testtype";s:1:"0";s:8:"testcode";s:123:"let result = new LinkedList();
+result.head = addTwoNumbers(list1, list2);
+console.log("Output List :");
+result.printList();";s:5:"stdin";s:11:"2,4,3
+5,6,4";s:8:"expected";s:65:"List 1:
+2 -> 4 -> 3
+List 2:
+5 -> 6 -> 4
+Output List :
+7 -> 0 -> 8";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"1";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:1;O:8:"stdClass":11:{s:2:"id";s:3:"519";s:10:"questionid";s:4:"1665";s:8:"testtype";s:1:"0";s:8:"testcode";s:123:"let result = new LinkedList();
+result.head = addTwoNumbers(list1, list2);
+console.log("Output List :");
+result.printList();";s:5:"stdin";s:11:"3,5,7
+1,3,2";s:8:"expected";s:65:"List 1:
+3 -> 5 -> 7
+List 2:
+1 -> 3 -> 2
+Output List :
+4 -> 8 -> 9";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:2;O:8:"stdClass":11:{s:2:"id";s:3:"520";s:10:"questionid";s:4:"1665";s:8:"testtype";s:1:"0";s:8:"testcode";s:123:"let result = new LinkedList();
+result.head = addTwoNumbers(list1, list2);
+console.log("Output List :");
+result.printList();";s:5:"stdin";s:11:"1,0,0
+0,0,1";s:8:"expected";s:65:"List 1:
+1 -> 0 -> 0
+List 2:
+0 -> 0 -> 1
+Output List :
+1 -> 0 -> 1";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:3;O:8:"stdClass":11:{s:2:"id";s:3:"521";s:10:"questionid";s:4:"1665";s:8:"testtype";s:1:"0";s:8:"testcode";s:123:"let result = new LinkedList();
+result.head = addTwoNumbers(list1, list2);
+console.log("Output List :");
+result.printList();";s:5:"stdin";s:9:"4,5
+3,7,6";s:8:"expected";s:60:"List 1:
+4 -> 5
+List 2:
+3 -> 7 -> 6
+Output List :
+7 -> 2 -> 7";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:4;O:8:"stdClass":11:{s:2:"id";s:3:"522";s:10:"questionid";s:4:"1665";s:8:"testtype";s:1:"0";s:8:"testcode";s:123:"let result = new LinkedList();
+result.head = addTwoNumbers(list1, list2);
+console.log("Output List :");
+result.printList();";s:5:"stdin";s:5:"9
+2,7";s:8:"expected";s:45:"List 1:
+9
+List 2:
+2 -> 7
+Output List :
+1 -> 8";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}}}s:5:"hints";a:0:{}s:9:"prototype";O:25:"qtype_coderunner_question":86:{s:2:"id";s:4:"2785";s:8:"category";s:1:"2";s:9:"contextid";s:1:"1";s:6:"parent";s:1:"0";s:5:"qtype";O:16:"qtype_coderunner":1:{s:14:" * fileoptions";a:3:{s:7:"subdirs";b:1;s:8:"maxfiles";i:-1;s:8:"maxbytes";i:0;}}s:4:"name";s:24:"BUILTIN_PROTOTYPE_nodejs";s:12:"questiontext";s:536:"<p>A JavaScript question type, run using nodejs. The
+test program to be executed starts with the student answer. That is followed
+by each of the test case codes in turn, with a separator string being printed
+between them. However, if there is any standard input present for any of the
+test cases, a separate test run will be done for each test case.</p><p>
+If there is a risk of side-effects from a test case affecting later test cases
+you can add standard input to any one of the test cases to force the one-run-per-test-case
+mode.</p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:6:"length";s:1:"1";s:7:"penalty";d:0;s:5:"stamp";s:37:"lms.velandev.life+250922115904+0z8ofh";s:8:"idnumber";N;s:11:"timecreated";s:10:"1758542344";s:12:"timemodified";s:10:"1758542344";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:5:"hints";a:0:{}s:6:"status";s:5:"ready";s:9:"versionid";s:4:"2785";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"2771";s:16:" * latestversion";N;s:12:"customfields";a:0:{}s:14:"shownumcorrect";b:0;s:9:"testcases";a:0:{}s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"1";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:15:"33.3, 66.7, ...";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:13:"answerpreload";s:0:"";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:179:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:0:"";s:14:"validateonsave";s:1:"0";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"0";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"twig";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:0:"";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:1:"0";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"0";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:1;s:7:"student";N;s:9:"prototype";N;s:26:"initialisationerrormessage";N;s:16:"cachedfuncparams";N;s:25:"cachedevaldtemplateparams";N;s:18:"mergeduiparameters";N;s:18:"templateparamsjson";N;s:10:"parameters";N;s:8:"stepinfo";N;s:7:"options";N;s:5:"isnew";N;s:7:"context";N;s:10:"questionid";N;s:16:"answerboxcolumns";s:3:"100";}}

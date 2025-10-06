@@ -1,0 +1,178 @@
+```gift
+// First Java Program - 25 MCQs
+
+::Q1:: What is the file extension of a Java source file? {
+    ~%0% .class
+    ~%100% .java
+    ~%0% .exe
+    ~%0% .jar
+}
+
+::Q2:: Which command compiles a Java program? {
+    ~%100% javac
+    ~%0% java
+    ~%0% run
+    ~%0% javadoc
+}
+
+::Q3:: Which command is used to run a compiled Java program? {
+    ~%0% javac
+    ~%100% java
+    ~%0% execute
+    ~%0% run
+}
+
+::Q4:: Which method serves as the entry point for every Java program? {
+    ~%100% public static void main(String[] args)
+    ~%0% start()
+    ~%0% run()
+    ~%0% init()
+}
+
+::Q5:: What is the correct syntax for the main method in Java? {
+    ~%100% public static void main(String[] args)
+    ~%0% static public void main(String args)
+    ~%0% public void main(String[] args)
+    ~%0% main()
+}
+
+::Q6:: What keyword is used to define a class in Java? {
+    ~%0% struct
+    ~%100% class
+    ~%0% define
+    ~%0% object
+}
+
+::Q7:: If the class name is "Hello", what should be the filename? {
+    ~%100% Hello.java
+    ~%0% hello.java
+    ~%0% Hello.class
+    ~%0% Main.java
+}
+
+::Q8:: What is the output of System.out.println("Hello Java"); ? {
+    ~%100% Hello Java
+    ~%0% "Hello Java"
+    ~%0% Hello
+    ~%0% Error
+}
+
+::Q9:: Which of the following is correct about System.out.println()? {
+    ~%0% It reads input
+    ~%100% It prints output and moves to new line
+    ~%0% It terminates program
+    ~%0% It defines variables
+}
+
+::Q10:: Which of the following prints output without a newline? {
+    ~%100% System.out.print()
+    ~%0% System.out.println()
+    ~%0% System.write()
+    ~%0% System.show()
+}
+
+::Q11:: Which keyword is used to indicate that main does not return any value? {
+    ~%100% void
+    ~%0% null
+    ~%0% empty
+    ~%0% None
+}
+
+::Q12:: Which modifier ensures main can be accessed without creating an object? {
+    ~%100% static
+    ~%0% public
+    ~%0% private
+    ~%0% abstract
+}
+
+::Q13:: Which modifier allows JVM to access the main method? {
+    ~%100% public
+    ~%0% private
+    ~%0% protected
+    ~%0% default
+}
+
+::Q14:: What does String[] args represent in main()? {
+    ~%0% Return type
+    ~%100% Command-line arguments
+    ~%0% JVM arguments
+    ~%0% Local variables
+}
+
+::Q15:: Which tool generates a .class file from a .java file? {
+    ~%100% javac
+    ~%0% java
+    ~%0% javadoc
+    ~%0% jar
+}
+
+::Q16:: What is inside the .class file after compilation? {
+    ~%100% Bytecode
+    ~%0% Source code
+    ~%0% Machine code directly
+    ~%0% Comments
+}
+
+::Q17:: Which is the correct way to add a single-line comment in Java? {
+    ~%100% //
+    ~%0% #
+    ~%0% <!-- -->
+    ~%0% %%
+}
+
+::Q18:: Which of the following is a multi-line comment in Java? {
+    ~%100% /* comment */
+    ~%0% // comment //
+    ~%0% # comment #
+    ~%0% <!-- comment -->
+}
+
+::Q19:: What happens if the file name and public class name are different? {
+    ~%100% Compilation error
+    ~%0% Runtime error
+    ~%0% Executes with warning
+    ~%0% Runs normally
+}
+
+::Q20:: Which is TRUE about Java identifiers (like class names)? {
+    ~%100% They cannot start with a digit
+    ~%0% They must always be uppercase
+    ~%0% They can contain spaces
+    ~%0% They must start with @
+}
+
+::Q21:: Which of the following is correct naming convention for a class? {
+    ~%100% ClassName
+    ~%0% classname
+    ~%0% class_name
+    ~%0% CLASSNAME
+}
+
+::Q22:: What will happen if we write "public static void Main"? {
+    ~%100% Program will not run (JVM looks for main with lowercase m)
+    ~%0% It will compile and run
+    ~%0% It will run with warning
+    ~%0% It will execute partially
+}
+
+::Q23:: Which symbol is used to terminate statements in Java? {
+    ~%100% ;
+    ~%0% :
+    ~%0% .
+    ~%0% ,
+}
+
+::Q24:: What is the default package available to every Java program? {
+    ~%100% java.lang
+    ~%0% java.util
+    ~%0% java.io
+    ~%0% java.net
+}
+
+::Q25:: Which step is correct order of program execution? {
+    ~%100% Write -> Compile -> Run
+    ~%0% Run -> Write -> Compile
+    ~%0% Compile -> Run -> Write
+    ~%0% Run -> Compile -> Execute
+}
+```

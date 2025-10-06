@@ -1,0 +1,83 @@
+<html>
+<head>
+ <title>Beauty Blog</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff0f5;
+      color: #444;
+    }
+    .blog-container {
+      max-width: 750px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+     border-radius: 10px;
+    }
+    h1, h2 {
+      color: #b03060;
+    }
+    h1 {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin: 15px 0;
+    }
+    img {
+      width:600px;
+      border-radius: 8px;
+      margin: 20px 0;
+      height:400px;
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="blog-container">
+    <h1>Glowing Skin Secrets: My Morning Beauty Routine ✨</h1>
+    <p><em>Posted on July 1, 2025 by Swetha</em></p>
+    <center>
+    <img src="morning.jpg" alt="Morning Skincare Routine">
+    </center>
+
+    <p>Starting the day with a gentle and effective skincare routine is the key to radiant, glowing skin. I believe that beauty begins with self-care, and today I’m sharing my tried-and-true morning beauty routine that helps me feel confident and fresh all day long.</p>
+
+    <h2>Step 1: Cleanse & Refresh</h2>
+    <p>I always begin with a mild foaming cleanser to remove overnight oils and refresh my skin. It’s gentle on my skin but effective enough to leave it feeling clean and smooth.</p>
+
+    <center><img src="cleanse.jpg" alt="Facial Cleanser">
+    </center>
+    <h2>Step 2: Tone & Balance</h2>
+    <p>After patting my skin dry, I use a rose water toner. It smells amazing and helps balance the pH level of my skin while tightening pores.</p>
+
+    <h2>Step 3: Serum & Moisturize</h2>
+    <p>Next, I apply a vitamin C serum to brighten and protect, followed by a lightweight moisturizer to lock in hydration. This duo gives my skin a healthy, dewy glow.</p>
+
+    <h2>Step 4: Light Makeup Look</h2>
+    <p>For daily wear, I go for a minimal makeup look: tinted moisturizer, a bit of blush, and a nude lip gloss. Natural beauty is always in style!</p>
+    <center>
+    <img src="makeup.jpg" alt="Makeup Products">
+    </center>
+
+    <h2>My Favorite Products</h2>
+    <ul>
+      <li>Foaming Facial Cleanser – GlowSkin</li>
+      <li>Rose Petal Toner – Nature’s Touch</li>
+      <li>Vitamin C Serum – Radiance Boost</li>
+      <li>HydraLite Moisturizer – SkinLove</li>
+      <li>Tinted Lip Gloss – BlushPink</li>
+    </ul>
+
+    <h2>Final Thoughts 💖</h2>
+    <p>Beauty isn’t just skin deep — it’s about how you feel inside too. By taking a few minutes for yourself each morning, you can boost your confidence and shine throughout your day. What’s your go-to beauty step? Let me know in the comments!</p>
+  </div>
+</body>
+</html>

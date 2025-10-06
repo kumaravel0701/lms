@@ -1,0 +1,179 @@
+```gift
+// Java Operators - 25 MCQs
+
+::Q1:: Which operator is used for addition in Java? {
+    ~%100% +
+    ~%0% -
+    ~%0% *
+    ~%0% /
+}
+
+::Q2:: What is the result of 10 % 3 in Java? {
+    ~%100% 1
+    ~%0% 3
+    ~%0% 10
+    ~%0% 0
+}
+
+::Q3:: Which operator is used to compare two values for equality? {
+    ~%100% ==
+    ~%0% =
+    ~%0% !=
+    ~%0% equals
+}
+
+::Q4:: Which operator is used for assignment in Java? {
+    ~%100% =
+    ~%0% ==
+    ~%0% :=
+    ~%0% <=
+}
+
+::Q5:: Which operator is used for logical AND in Java? {
+    ~%100% &&
+    ~%0% &
+    ~%0% and
+    ~%0% %
+}
+
+::Q6:: Which operator is used for logical OR in Java? {
+    ~%100% ||
+    ~%0% |
+    ~%0% or
+    ~%0% //
+}
+
+::Q7:: Which operator is used for NOT operation in Java? {
+    ~%100% !
+    ~%0% ~
+    ~%0% not
+    ~%0% ^
+}
+
+::Q8:: Which operator is used to increment a value by 1? {
+    ~%100% ++
+    ~%0% --
+    ~%0% +=
+    ~%0% **
+}
+
+::Q9:: Which operator is used to decrement a value by 1? {
+    ~%0% ++
+    ~%100% --
+    ~%0% -=
+    ~%0% **
+}
+
+::Q10:: What is the result of 5 + 2 * 3? {
+    ~%100% 11
+    ~%0% 21
+    ~%0% 7
+    ~%0% 30
+}
+
+::Q11:: Which operator has the highest precedence? {
+    ~%100% ()
+    ~%0% ++
+    ~%0% *
+    ~%0% &&
+}
+
+::Q12:: Which operator is used for bitwise AND? {
+    ~%100% &
+    ~%0% &&
+    ~%0% |
+    ~%0% %%
+}
+
+::Q13:: Which operator is used for bitwise OR? {
+    ~%100% |
+    ~%0% ||
+    ~%0% or
+    ~%0% &
+}
+
+::Q14:: Which operator is used for bitwise XOR? {
+    ~%100% ^
+    ~%0% !
+    ~%0% ~
+    ~%0% **
+}
+
+::Q15:: Which operator is used for bitwise complement? {
+    ~%100% ~
+    ~%0% !
+    ~%0% ^
+    ~%0% %
+}
+
+::Q16:: Which operator is known as the ternary operator? {
+    ~%100% ? :
+    ~%0% if else
+    ~%0% switch
+    ~%0% =>
+}
+
+::Q17:: What is the result of true && false? {
+    ~%100% false
+    ~%0% true
+    ~%0% 0
+    ~%0% 1
+}
+
+::Q18:: What is the result of true || false? {
+    ~%100% true
+    ~%0% false
+    ~%0% 0
+    ~%0% 1
+}
+
+::Q19:: Which operator is used to combine a value with addition and assignment? {
+    ~%100% +=
+    ~%0% =
+    ~%0% ==
+    ~%0% ++
+}
+
+::Q20:: What is the result of 10 >> 1 (right shift)? {
+    ~%100% 5
+    ~%0% 10
+    ~%0% 20
+    ~%0% 0
+}
+
+::Q21:: What is the result of 10 << 1 (left shift)? {
+    ~%100% 20
+    ~%0% 10
+    ~%0% 5
+    ~%0% 0
+}
+
+::Q22:: Which operator checks if an object is of a particular type? {
+    ~%100% instanceof
+    ~%0% typeof
+    ~%0% cast
+    ~%0% check
+}
+
+::Q23:: Which operator is used to access members of a class or object? {
+    ~%100% .
+    ~%0% ->
+    ~%0% ::
+    ~%0% #
+}
+
+::Q24:: Which operator is used to access static members? {
+    ~%100% ::
+    ~%0% .
+    ~%0% ->
+    ~%0% #
+}
+
+::Q25:: Which operator is used to multiply two numbers? {
+    ~%0% /
+    ~%100% *
+    ~%0% %
+    ~%0% **
+}
+```
+	

@@ -1,0 +1,207 @@
+```gift
+// Java Control Flow (if, switch, loops, break/continue) - 25 MCQs
+
+::Q1:: Which keyword is used for conditional branching in Java? {
+    ~%100% if
+    ~%0% for
+    ~%0% while
+    ~%0% switch
+}
+
+::Q2:: What happens if the condition in an if statement is false? {
+    ~%0% The if block executes
+    ~%100% The else block executes (if present)
+    ~%0% Program crashes
+    ~%0% Loop executes
+}
+
+::Q3:: Which of the following is NOT valid in a switch statement? {
+    ~%0% int
+    ~%0% char
+    ~%100% float
+    ~%0% String
+}
+
+::Q4:: Which keyword is used to stop fall-through in a switch? {
+    ~%100% break
+    ~%0% continue
+    ~%0% exit
+    ~%0% stop
+}
+
+::Q5:: If break is not used in switch, what happens? {
+    ~%100% Execution continues to next case
+    ~%0% Program stops
+    ~%0% Error occurs
+    ~%0% Default executes
+}
+
+::Q6:: Which of these loops checks condition before execution? {
+    ~%100% while
+    ~%100% for
+    ~%0% do-while
+    ~%0% switch
+}
+
+::Q7:: Which loop executes at least once? {
+    ~%0% while
+    ~%0% for
+    ~%100% do-while
+    ~%0% switch
+}
+
+::Q8:: Which loop is preferred when number of iterations is known? {
+    ~%100% for
+    ~%0% while
+    ~%0% do-while
+    ~%0% if
+}
+
+::Q9:: What will this code print?
+int x=5;
+while(x<5){
+   System.out.print("Hi");
+}
+{
+    ~%100% Nothing
+    ~%0% Infinite Hi
+    ~%0% Hi
+    ~%0% Error
+}
+
+::Q10:: Which statement skips current iteration in a loop? {
+    ~%0% break
+    ~%100% continue
+    ~%0% stop
+    ~%0% return
+}
+
+::Q11:: Which statement exits a loop immediately? {
+    ~%100% break
+    ~%0% continue
+    ~%0% return
+    ~%0% stop
+}
+
+::Q12:: Which keyword returns control from a method? {
+    ~%0% break
+    ~%0% continue
+    ~%100% return
+    ~%0% exit
+}
+
+::Q13:: Output?
+for(int i=1;i<=3;i++){ System.out.print(i+" "); }
+{
+    ~%100% 1 2 3 
+    ~%0% 0 1 2 
+    ~%0% 2 3 4 
+    ~%0% Infinite loop
+}
+
+::Q14:: Output?
+int i=1;
+do{
+  System.out.print(i);
+  i++;
+}while(i<3);
+{
+    ~%100% 12
+    ~%0% 1
+    ~%0% 123
+    ~%0% Infinite
+}
+
+::Q15:: Correct syntax of for loop? {
+    ~%100% for(initialization; condition; increment){ }
+    ~%0% for(condition; initialization; increment){ }
+    ~%0% for(increment; initialization; condition){ }
+    ~%0% for(initialization; increment; condition){ }
+}
+
+::Q16:: Which represents an infinite loop? {
+    ~%100% for(;;)
+    ~%0% while(false)
+    ~%0% do{ }while(false)
+    ~%0% for(int i=0;i<10;i++)
+}
+
+::Q17:: Which keyword is used in switch when no case matches? {
+    ~%100% default
+    ~%0% else
+    ~%0% otherwise
+    ~%0% none
+}
+
+::Q18:: Output?
+for(int i=1;i<=5;i++){
+   if(i==3) break;
+   System.out.print(i);
+}
+{
+    ~%100% 12
+    ~%0% 123
+    ~%0% 1234
+    ~%0% 12345
+}
+
+::Q19:: Output?
+for(int i=1;i<=5;i++){
+   if(i==3) continue;
+   System.out.print(i);
+}
+{
+    ~%0% 12345
+    ~%0% 123
+    ~%100% 1245
+    ~%0% 12
+}
+
+::Q20:: Can loops be nested in Java? {
+    ~%100% Yes
+    ~%0% No
+    ~%0% Only while
+    ~%0% Only for
+}
+
+::Q21:: Which loop is best when exit depends on user input? {
+    ~%0% for
+    ~%100% while
+    ~%0% switch
+    ~%0% none
+}
+
+::Q22:: Which part of for loop is optional? {
+    ~%100% All three parts
+    ~%0% Only initialization
+    ~%0% Only condition
+    ~%0% Only increment
+}
+
+::Q23:: Output?
+int x=0;
+while(x<3){
+  System.out.print(x);
+  x++;
+}
+{
+    ~%100% 012
+    ~%0% 123
+    ~%0% 01
+    ~%0% Infinite
+}
+
+::Q24:: Which loop is equivalent to while(true)? {
+    ~%100% for(;;)
+    ~%0% do-while(false)
+    ~%0% for(int i=0;i<10;i++)
+    ~%0% if-else
+}
+
+::Q25:: Which keyword is used to control program flow inside loops and switch? {
+    ~%100% break and continue
+    ~%0% stop and next
+    ~%0% exit and skip
+    ~%0% end and goto
+}
+```

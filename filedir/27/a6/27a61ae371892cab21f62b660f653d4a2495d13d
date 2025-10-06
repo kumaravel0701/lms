@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Q21: Add Two Numbers -->
+<question type="coderunner">
+  <name><text>Q21</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their sum.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(a + b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>10 20</text></stdin><expected><text>30</text></expected></testcase>
+    <testcase><stdin><text>-5 15</text></stdin><expected><text>10</text></expected></testcase>
+    <testcase><stdin><text>100 200</text></stdin><expected><text>300</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q22: Subtract Two Numbers -->
+<question type="coderunner">
+  <name><text>Q22</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their difference (first - second).</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(a - b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>10 5</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>20 30</text></stdin><expected><text>-10</text></expected></testcase>
+    <testcase><stdin><text>50 50</text></stdin><expected><text>0</text></expected></testcase>
+    <testcase><stdin><text>-5 10</text></stdin><expected><text>-15</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q23: Multiply Two Numbers -->
+<question type="coderunner">
+  <name><text>Q23</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their product.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(a * b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>6</text></expected></testcase>
+    <testcase><stdin><text>5 0</text></stdin><expected><text>0</text></expected></testcase>
+    <testcase><stdin><text>-4 2</text></stdin><expected><text>-8</text></expected></testcase>
+    <testcase><stdin><text>10 10</text></stdin><expected><text>100</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q24: Divide Two Numbers -->
+<question type="coderunner">
+  <name><text>Q24</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their quotient (integer division).</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(Math.floor(a / b));
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>10 2</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>9 2</text></stdin><expected><text>4</text></expected></testcase>
+    <testcase><stdin><text>20 5</text></stdin><expected><text>4</text></expected></testcase>
+    <testcase><stdin><text>7 3</text></stdin><expected><text>2</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q25: Remainder -->
+<question type="coderunner">
+  <name><text>Q25</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print the remainder (a % b).</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(a % b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>10 3</text></stdin><expected><text>1</text></expected></testcase>
+    <testcase><stdin><text>20 4</text></stdin><expected><text>0</text></expected></testcase>
+    <testcase><stdin><text>7 5</text></stdin><expected><text>2</text></expected></testcase>
+    <testcase><stdin><text>9 2</text></stdin><expected><text>1</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q26: Average of Two -->
+<question type="coderunner">
+  <name><text>Q26</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their average.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log((a + b) / 2);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>4 6</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>10 20</text></stdin><expected><text>15</text></expected></testcase>
+    <testcase><stdin><text>1 2</text></stdin><expected><text>1.5</text></expected></testcase>
+    <testcase><stdin><text>0 100</text></stdin><expected><text>50</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q27: Square -->
+<question type="coderunner">
+  <name><text>Q27</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a number and print its square.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const n = parseInt(require('fs').readFileSync(0,'utf8').trim());
+console.log(n * n);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2</text></stdin><expected><text>4</text></expected></testcase>
+    <testcase><stdin><text>5</text></stdin><expected><text>25</text></expected></testcase>
+    <testcase><stdin><text>-3</text></stdin><expected><text>9</text></expected></testcase>
+    <testcase><stdin><text>10</text></stdin><expected><text>100</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q28: Cube -->
+<question type="coderunner">
+  <name><text>Q28</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a number and print its cube.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const n = parseInt(require('fs').readFileSync(0,'utf8').trim());
+console.log(n * n * n);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2</text></stdin><expected><text>8</text></expected></testcase>
+    <testcase><stdin><text>3</text></stdin><expected><text>27</text></expected></testcase>
+    <testcase><stdin><text>-2</text></stdin><expected><text>-8</text></expected></testcase>
+    <testcase><stdin><text>5</text></stdin><expected><text>125</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q29: Area of Rectangle -->
+<question type="coderunner">
+  <name><text>Q29</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read length and width of rectangle. Print its area.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [l, w] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(l * w);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>5 10</text></stdin><expected><text>50</text></expected></testcase>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>6</text></expected></testcase>
+    <testcase><stdin><text>7 7</text></stdin><expected><text>49</text></expected></testcase>
+    <testcase><stdin><text>8 0</text></stdin><expected><text>0</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q30: Perimeter of Rectangle -->
+<question type="coderunner">
+  <name><text>Q30</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read length and width. Print the perimeter of rectangle.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [l, w] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(2 * (l + w));
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>5 10</text></stdin><expected><text>30</text></expected></testcase>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>10</text></expected></testcase>
+    <testcase><stdin><text>7 7</text></stdin><expected><text>28</text></expected></testcase>
+    <testcase><stdin><text>8 0</text></stdin><expected><text>16</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q31: Area of Circle -->
+<question type="coderunner">
+  <name><text>Q31</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read radius and print area of circle (πr², use 3.14).</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const r = parseFloat(require('fs').readFileSync(0,'utf8').trim());
+console.log(3.14 * r * r);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>1</text></stdin><expected><text>3.14</text></expected></testcase>
+    <testcase><stdin><text>2</text></stdin><expected><text>12.56</text></expected></testcase>
+    <testcase><stdin><text>3</text></stdin><expected><text>28.26</text></expected></testcase>
+    <testcase><stdin><text>0</text></stdin><expected><text>0</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q32: Perimeter of Circle -->
+<question type="coderunner">
+  <name><text>Q32</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read radius and print circumference of circle (2πr, use 3.14).</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const r = parseFloat(require('fs').readFileSync(0,'utf8').trim());
+console.log(2 * 3.14 * r);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>1</text></stdin><expected><text>6.28</text></expected></testcase>
+    <testcase><stdin><text>2</text></stdin><expected><text>12.56</text></expected></testcase>
+    <testcase><stdin><text>3</text></stdin><expected><text>18.84</text></expected></testcase>
+    <testcase><stdin><text>0</text></stdin><expected><text>0</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q33: Swap Two Numbers -->
+<question type="coderunner">
+  <name><text>Q33</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and swap them. Print swapped values.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+let [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+[a, b] = [b, a];
+console.log(a + " " + b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>5 10</text></stdin><expected><text>10 5</text></expected></testcase>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>3 2</text></expected></testcase>
+    <testcase><stdin><text>7 7</text></stdin><expected><text>7 7</text></expected></testcase>
+    <testcase><stdin><text>-1 9</text></stdin><expected><text>9 -1</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q34: Simple Interest -->
+<question type="coderunner">
+  <name><text>Q34</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read P, R, T and print Simple Interest (P*R*T/100).</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [p, r, t] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log((p * r * t) / 100);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>1000 5 2</text></stdin><expected><text>100</text></expected></testcase>
+    <testcase><stdin><text>2000 10 1</text></stdin><expected><text>200</text></expected></testcase>
+    <testcase><stdin><text>500 5 5</text></stdin><expected><text>125</text></expected></testcase>
+    <testcase><stdin><text>1000 0 2</text></stdin><expected><text>0</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q35: Convert Celsius to Fahrenheit -->
+<question type="coderunner">
+  <name><text>Q35</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read temperature in Celsius and convert to Fahrenheit using F = (C*9/5)+32.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const c = parseFloat(require('fs').readFileSync(0,'utf8').trim());
+console.log((c * 9/5) + 32);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>0</text></stdin><expected><text>32</text></expected></testcase>
+    <testcase><stdin><text>100</text></stdin><expected><text>212</text></expected></testcase>
+    <testcase><stdin><text>-40</text></stdin><expected><text>-40</text></expected></testcase>
+    <testcase><stdin><text>37</text></stdin><expected><text>98.6</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q36: Convert Fahrenheit to Celsius -->
+<question type="coderunner">
+  <name><text>Q36</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read temperature in Fahrenheit and convert to Celsius using C = (F-32)*5/9.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const f = parseFloat(require('fs').readFileSync(0,'utf8').trim());
+console.log((f - 32) * 5/9);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>32</text></stdin><expected><text>0</text></expected></testcase>
+    <testcase><stdin><text>212</text></stdin><expected><text>100</text></expected></testcase>
+    <testcase><stdin><text>-40</text></stdin><expected><text>-40</text></expected></testcase>
+    <testcase><stdin><text>98.6</text></stdin><expected><text>37</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q37: Power -->
+<question type="coderunner">
+  <name><text>Q37</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read base and exponent. Print base^exponent.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(Math.pow(a, b));
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>8</text></expected></testcase>
+    <testcase><stdin><text>5 0</text></stdin><expected><text>1</text></expected></testcase>
+    <testcase><stdin><text>3 2</text></stdin><expected><text>9</text></expected></testcase>
+    <testcase><stdin><text>10 1</text></stdin><expected><text>10</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q38: Greatest of Two -->
+<question type="coderunner">
+  <name><text>Q38</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers. Print the greater one.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(a > b ? a : b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>5 10</text></stdin><expected><text>10</text></expected></testcase>
+    <testcase><stdin><text>20 15</text></stdin><expected><text>20</text></expected></testcase>
+    <testcase><stdin><text>7 7</text></stdin><expected><text>7</text></expected></testcase>
+    <testcase><stdin><text>-1 9</text></stdin><expected><text>9</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q39: Greatest of Three -->
+<question type="coderunner">
+  <name><text>Q39</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read three numbers. Print the greatest.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b, c] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(Math.max(a, b, c));
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>5 10 7</text></stdin><expected><text>10</text></expected></testcase>
+    <testcase><stdin><text>20 15 25</text></stdin><expected><text>25</text></expected></testcase>
+    <testcase><stdin><text>7 7 7</text></stdin><expected><text>7</text></expected></testcase>
+    <testcase><stdin><text>-1 9 0</text></stdin><expected><text>9</text></expected></testcase>
+  </testcases>
+</question>
+
+
+
+</quiz>

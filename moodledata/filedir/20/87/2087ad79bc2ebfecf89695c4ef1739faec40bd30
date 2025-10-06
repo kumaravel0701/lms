@@ -1,0 +1,100 @@
+```gift
+// JVM, JRE, JDK - 25 MCQs
+
+::Q1:: What does JVM stand for? {
+    ~%0% Java Verified Model
+    ~%100% Java Virtual Machine
+    ~%0% Java Version Manager
+    ~%0% Java Variable Machine
+}
+
+::Q2:: Which component is responsible for executing Java bytecode? {
+    ~%100% JVM
+    ~%0% JDK
+    ~%0% JRE
+    ~%0% Compiler
+}
+
+::Q3:: The JDK includes which of the following? {
+    ~%100% JRE + development tools
+    ~%0% Only JVM
+    ~%0% Only Java libraries
+    ~%0% JRE - JVM
+}
+
+::Q4:: Which is NOT a part of JRE? {
+    ~%0% JVM
+    ~%100% Compiler (javac)
+    ~%0% Java libraries
+    ~%0% Runtime classes
+}
+
+::Q5:: Which tool is provided by JDK but not JRE? {
+    ~%0% java
+    ~%100% javac
+    ~%0% JVM
+    ~%0% class loader
+}
+
+::Q6:: Which of the following correctly describes JVM? {
+    ~%100% An interpreter for bytecode
+    ~%0% A compiler of Java source code
+    ~%0% A package of APIs
+    ~%0% An IDE for Java
+}
+
+::Q7:: Which of these is platform dependent? {
+    ~%0% Java bytecode
+    ~%100% JVM implementation
+    ~%0% .java source file
+    ~%0% JDK tools
+}
+
+::Q8:: The JRE contains: {
+    ~%0% Compiler and debugger
+    ~%0% Only JVM
+    ~%100% JVM + Libraries
+    ~%0% Only documentation
+}
+
+::Q9:: Which statement about JDK is TRUE? {
+    ~%100% It is required for developing Java applications
+    ~%0% It only executes Java programs
+    ~%0% It does not contain JRE
+    ~%0% It is optional for programmers
+}
+
+::Q10:: Which of these is NOT included in JDK? {
+    ~%0% Debugger
+    ~%0% Compiler
+    ~%0% JRE
+    ~%100% CLR
+}
+
+::Q11:: Bytecode is executed by: {
+    ~%100% JVM
+    ~%0% JRE
+    ~%0% JDK
+    ~%0% Operating system directly
+}
+
+::Q12:: Which component converts Java source code into bytecode? {
+    ~%100% javac
+    ~%0% JVM
+    ~%0% JRE
+    ~%0% JIT
+}
+
+::Q13:: JIT compiler is a part of: {
+    ~%100% JVM
+    ~%0% JDK
+    ~%0% JRE libraries
+    ~%0% Java source code
+}
+
+::Q14:: Which package is automatically available without importing in JDK? {
+    ~%100% java.lang
+    ~%0% java.util
+    ~%0% java.io
+ 
+```

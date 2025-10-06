@@ -1,0 +1,8 @@
+O:8:"stdClass":26:{s:2:"id";s:4:"4980";s:8:"category";s:3:"704";s:6:"parent";s:1:"0";s:4:"name";s:3:"Q16";s:12:"questiontext";s:103:"What is the output?
+int[][] arr=,{3,4}};
+System.out.print(arr[1][0]); {
+~%0% 1
+~%100% 3
+~%0% 4
+~%0% 2
+}";s:18:"questiontextformat";s:1:"0";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"0";s:11:"defaultmark";d:1;s:7:"penalty";d:0.3333333;s:5:"qtype";s:11:"shortanswer";s:6:"length";s:1:"1";s:5:"stamp";s:37:"lms.velandev.life+250930051245+Aw0bsg";s:11:"timecreated";s:10:"1759209165";s:12:"timemodified";s:10:"1759209165";s:9:"createdby";s:2:"91";s:10:"modifiedby";s:2:"91";s:8:"idnumber";N;s:9:"contextid";s:3:"811";s:6:"status";s:5:"ready";s:9:"versionid";s:4:"4980";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"4788";s:14:"categoryobject";O:8:"stdClass":9:{s:2:"id";s:3:"704";s:4:"name";s:35:"Arrays(1D,2D,Multi-dimentional) MCQ";s:9:"contextid";s:3:"811";s:4:"info";s:0:"";s:10:"infoformat";s:1:"1";s:5:"stamp";s:37:"lms.velandev.life+250930050903+GnDfDg";s:6:"parent";s:3:"702";s:9:"sortorder";s:4:"1000";s:8:"idnumber";N;}s:7:"options";O:8:"stdClass":2:{s:7:"usecase";s:1:"0";s:7:"answers";a:1:{i:12272;O:8:"stdClass":7:{s:2:"id";s:5:"12272";s:8:"question";s:4:"4980";s:6:"answer";s:4:"{1,2";s:12:"answerformat";s:1:"0";s:8:"fraction";d:1;s:8:"feedback";s:0:"";s:14:"feedbackformat";s:1:"0";}}}s:5:"hints";a:0:{}}

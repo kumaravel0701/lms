@@ -1,0 +1,180 @@
+```gift
+// Java Input/Output (Scanner, System.out) - 25 MCQs
+
+::Q1:: Which package is required to use Scanner class? {
+    ~%0% java.io
+    ~%100% java.util
+    ~%0% java.lang
+    ~%0% java.net
+}
+
+::Q2:: Which class is used to read input from the keyboard in Java? {
+    ~%100% Scanner
+    ~%0% Input
+    ~%0% Reader
+    ~%0% Console
+}
+
+::Q3:: What is the correct way to create a Scanner object for keyboard input? {
+    ~%100% Scanner sc = new Scanner(System.in);
+    ~%0% Scanner sc = new Scanner(System.out);
+    ~%0% Scanner sc = new Scanner();
+    ~%0% new Scanner();
+}
+
+::Q4:: Which method of Scanner is used to read an integer? {
+    ~%100% nextInt()
+    ~%0% readInt()
+    ~%0% getInt()
+    ~%0% scanInt()
+}
+
+::Q5:: Which method of Scanner is used to read a string token? {
+    ~%100% next()
+    ~%0% nextLine()
+    ~%0% getString()
+    ~%0% read()
+}
+
+::Q6:: Which method of Scanner reads a full line including spaces? {
+    ~%0% next()
+    ~%100% nextLine()
+    ~%0% readLine()
+    ~%0% getLine()
+}
+
+::Q7:: Which method of Scanner is used to read a double value? {
+    ~%100% nextDouble()
+    ~%0% readDouble()
+    ~%0% getDouble()
+    ~%0% scanDouble()
+}
+
+::Q8:: Which method of Scanner is used to check if there is another token available? {
+    ~%100% hasNext()
+    ~%0% next()
+    ~%0% checkNext()
+    ~%0% available()
+}
+
+::Q9:: Which output method prints text with a newline? {
+    ~%100% System.out.println()
+    ~%0% System.out.print()
+    ~%0% System.out.write()
+    ~%0% System.out.printf()
+}
+
+::Q10:: Which output method prints text without a newline? {
+    ~%100% System.out.print()
+    ~%0% System.out.println()
+    ~%0% System.out.write()
+    ~%0% System.out.scan()
+}
+
+::Q11:: Which method allows formatted output in Java? {
+    ~%0% System.out.print()
+    ~%0% System.out.println()
+    ~%100% System.out.printf()
+    ~%0% System.out.formatln()
+}
+
+::Q12:: What does System.in represent? {
+    ~%100% Standard input stream
+    ~%0% Standard output stream
+    ~%0% Standard error stream
+    ~%0% File input
+}
+
+::Q13:: What does System.out represent? {
+    ~%100% Standard output stream
+    ~%0% Standard input stream
+    ~%0% Error stream
+    ~%0% Scanner object
+}
+
+::Q14:: What does System.err represent? {
+    ~%0% Standard input
+    ~%100% Standard error stream
+    ~%0% Standard output
+    ~%0% Exception handler
+}
+
+::Q15:: Which of these is TRUE about Scanner? {
+    ~%100% It can parse primitive types and strings
+    ~%0% It can only read files
+    ~%0% It can only read integers
+    ~%0% It replaces System.out
+}
+
+::Q16:: Which exception may occur if input type does not match in Scanner? {
+    ~%0% IOException
+    ~%100% InputMismatchException
+    ~%0% NumberFormatException
+    ~%0% NullPointerException
+}
+
+::Q17:: Which of these methods closes the Scanner object? {
+    ~%100% close()
+    ~%0% exit()
+    ~%0% destroy()
+    ~%0% shutdown()
+}
+
+::Q18:: Which statement about next() vs nextLine() is correct? {
+    ~%100% next() reads one word, nextLine() reads entire line
+    ~%0% next() reads line, nextLine() reads word
+    ~%0% Both are same
+    ~%0% Neither reads input
+}
+
+::Q19:: What is the correct way to print "Hello, World"? {
+    ~%100% System.out.println("Hello, World");
+    ~%0% print("Hello, World");
+    ~%0% Console.print("Hello, World");
+    ~%0% echo "Hello, World";
+}
+
+::Q20:: Which of these is a valid use of printf()? {
+    ~%100% System.out.printf("Age: %d", age);
+    ~%0% System.out.printf("Age:", age);
+    ~%0% System.out.printf(age);
+    ~%0% System.out.printf("Age: #", age);
+}
+
+::Q21:: What is the output of System.out.print("Hi"); System.out.print("Java"); {
+    ~%100% HiJava
+    ~%0% Hi Java
+    ~%0% Hi
+Java
+    ~%0% Error
+}
+
+::Q22:: What is the output of System.out.println("Hi"); System.out.println("Java"); {
+    ~%0% HiJava
+    ~%100% Hi
+Java
+    ~%0% Hi Java
+    ~%0% Error
+}
+
+::Q23:: Which import is required for InputMismatchException? {
+    ~%0% java.io
+    ~%100% java.util
+    ~%0% java.lang
+    ~%0% java.net
+}
+
+::Q24:: What is recommended after using Scanner(System.in)? {
+    ~%0% Nothing
+    ~%100% Close it using sc.close()
+    ~%0% Call System.gc()
+    ~%0% Restart JVM
+}
+
+::Q25:: Which is TRUE about System.out and System.in? {
+    ~%100% They are predefined stream objects
+    ~%0% They must be created manually
+    ~%0% They belong to java.util
+    ~%0% They cannot be used in main()
+}
+```

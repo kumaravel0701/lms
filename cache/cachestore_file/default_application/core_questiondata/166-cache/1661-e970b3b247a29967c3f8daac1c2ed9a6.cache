@@ -1,0 +1,223 @@
+O:8:"stdClass":27:{s:2:"id";s:4:"1661";s:8:"category";s:3:"306";s:6:"parent";s:1:"0";s:4:"name";s:6:"Q12-16";s:12:"questiontext";s:399:"<p>Store the details of all employees in an organization(employee id and employee name) in linked list and search for an employee using employee id.</p>
+<p>After obtaining the details of one employee, the system asks the user if they would want to add other employees (if so, provide y, otherwise, n), and they can search for an employee by entering their employee ID. <strong>[Google]</strong></p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:7:"penalty";d:0;s:5:"qtype";s:10:"coderunner";s:6:"length";s:1:"1";s:5:"stamp";s:37:"lms.velandev.life+250824050413+nc4qe4";s:11:"timecreated";s:10:"1756011853";s:12:"timemodified";s:10:"1756011853";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:8:"idnumber";N;s:9:"contextid";s:3:"455";s:6:"status";s:5:"ready";s:9:"versionid";s:4:"1661";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"1647";s:14:"categoryobject";O:8:"stdClass":9:{s:2:"id";s:3:"306";s:4:"name";s:23:"M1-D2- Coding Challenge";s:9:"contextid";s:3:"455";s:4:"info";s:0:"";s:10:"infoformat";s:1:"0";s:5:"stamp";s:37:"lms.velandev.life+250824050413+VmNtaG";s:6:"parent";s:3:"304";s:9:"sortorder";s:3:"999";s:8:"idnumber";N;}s:7:"options";O:8:"stdClass":46:{s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"0";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:1:"0";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:16:"answerboxcolumns";s:3:"100";s:13:"answerpreload";s:1377:"class ListNode {
+    constructor(employeeID, employeeName, next = null) {
+        this.employeeID = employeeID;
+        this.employeeName = employeeName;
+        this.next = next;
+    }
+}
+class EmployeeLinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    addEmployee(employeeID, employeeName) {
+        /* Type your code here */
+    }
+
+    // Implement the search function here
+    searchEmployee(employeeID) {
+        /* Type your code here */
+    }
+    
+    //Print the employee details
+    printEmployee(){
+        /* Type your code here */
+    }
+    
+}
+
+// Driver code
+
+//Type your code here
+
+const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+
+function askForEmployeeDetails() {
+    rl.question('', (id) => {
+        rl.question('', (name) => {
+            employeeList.addEmployee(parseInt(id), name);
+            rl.question('', (answer) => {
+                if (answer.toLowerCase() == 'y') {
+                    askForEmployeeDetails();
+                } else {
+                    rl.question('', (searchId) => {
+                        employeeList.printEmployee();
+                        employeeList.searchEmployee(parseInt(searchId));
+                });
+                }
+            });
+        });
+    });
+}
+
+//Type your code here";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:179:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:2348:"class ListNode {
+    constructor(employeeID, employeeName, next = null) {
+        this.employeeID = employeeID;
+        this.employeeName = employeeName;
+        this.next = next;
+    }
+}
+class EmployeeLinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+    addEmployee(employeeID, employeeName) {
+        const newNode = new ListNode(employeeID, employeeName);
+        if (!this.head) {
+            this.head = newNode;
+        } else {
+            let current = this.head;
+            while (current.next) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+    }
+
+    // Implement the search function here
+    searchEmployee(employeeID) {
+        let current = this.head;
+        let found = 0
+        while (current !== null) {
+            if (current.employeeID === employeeID) {
+                console.log("Employee found with Employee ID : "+current.employeeID)
+                process.stdout.write( `Name of the Employee : ${current.employeeName}`)
+                found = 1
+            }
+            current = current.next;
+        }
+        if(found == 0)
+            console.log("Employee with ID "+ employeeID +" not found")
+    }
+    
+    //Print the employee details
+    printEmployee(){
+    let current = this.head
+    while(current){
+        console.log("Employee ID:",current.employeeID)
+        console.log("Employee Name:",current.employeeName)
+        current = current.next
+        }
+    }
+}
+// Create a new EmployeeLinkedList
+let employeeList = new EmployeeLinkedList();
+const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+
+function askForEmployeeDetails() {
+    rl.question('', (id) => {
+        rl.question('', (name) => {
+            employeeList.addEmployee(parseInt(id), name);
+            rl.question('', (answer) => {
+                if (answer.toLowerCase() == 'y') {
+                    askForEmployeeDetails();
+                } else {
+                    rl.question('', (searchId) => {
+                        employeeList.printEmployee();
+                        employeeList.searchEmployee(parseInt(searchId));
+                });
+                }
+            });
+        });
+    });
+}
+
+askForEmployeeDetails()
+
+";s:14:"validateonsave";s:1:"1";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"1";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"None";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:2:"{}";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:5:"10240";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"1";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:0;s:9:"testcases";a:5:{i:0;O:8:"stdClass":11:{s:2:"id";s:3:"498";s:10:"questionid";s:4:"1661";s:8:"testtype";s:1:"0";s:8:"testcode";s:0:"";s:5:"stdin";s:43:"101
+Kala
+y
+102
+Roshini
+y
+103
+Srinithi
+n
+102";s:8:"expected";s:186:"Employee ID: 101
+Employee Name: Kala
+Employee ID: 102
+Employee Name: Roshini
+Employee ID: 103
+Employee Name: Srinithi
+Employee found with Employee ID : 102
+Name of the Employee : Roshini";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"1";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:1;O:8:"stdClass":11:{s:2:"id";s:3:"499";s:10:"questionid";s:4:"1661";s:8:"testtype";s:1:"0";s:8:"testcode";s:0:"";s:5:"stdin";s:35:"11
+Malar
+y
+13
+Mariam
+y
+15
+Mano
+n
+11";s:8:"expected";s:176:"Employee ID: 11
+Employee Name: Malar
+Employee ID: 13
+Employee Name: Mariam
+Employee ID: 15
+Employee Name: Mano
+Employee found with Employee ID : 11
+Name of the Employee : Malar";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:2;O:8:"stdClass":11:{s:2:"id";s:3:"500";s:10:"questionid";s:4:"1661";s:8:"testtype";s:1:"0";s:8:"testcode";s:0:"";s:5:"stdin";s:27:"1102
+Ram
+y
+2103
+Ravi
+n
+1105";s:8:"expected";s:107:"Employee ID: 1102 
+Employee Name: Ram
+Employee ID: 2103
+Employee Name: Ravi
+Employee with ID 1105 not found";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"1";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:3;O:8:"stdClass":11:{s:2:"id";s:3:"501";s:10:"questionid";s:4:"1661";s:8:"testtype";s:1:"0";s:8:"testcode";s:0:"";s:5:"stdin";s:25:"201
+Mani
+y
+302
+Kani
+n
+404";s:8:"expected";s:104:"Employee ID: 201
+Employee Name: Mani
+Employee ID: 302
+Employee Name: Kani
+Employee with ID 404 not found";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:4;O:8:"stdClass":11:{s:2:"id";s:3:"502";s:10:"questionid";s:4:"1661";s:8:"testtype";s:1:"0";s:8:"testcode";s:0:"";s:5:"stdin";s:22:"101
+SSk
+y
+102
+AK
+n
+102";s:8:"expected";s:134:"Employee ID: 101
+Employee Name: SSk
+Employee ID: 102
+Employee Name: AK
+Employee found with Employee ID : 102
+Name of the Employee : AK";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}}}s:5:"hints";a:0:{}s:9:"prototype";O:25:"qtype_coderunner_question":86:{s:2:"id";s:4:"2785";s:8:"category";s:1:"2";s:9:"contextid";s:1:"1";s:6:"parent";s:1:"0";s:5:"qtype";O:16:"qtype_coderunner":1:{s:14:" * fileoptions";a:3:{s:7:"subdirs";b:1;s:8:"maxfiles";i:-1;s:8:"maxbytes";i:0;}}s:4:"name";s:24:"BUILTIN_PROTOTYPE_nodejs";s:12:"questiontext";s:536:"<p>A JavaScript question type, run using nodejs. The
+test program to be executed starts with the student answer. That is followed
+by each of the test case codes in turn, with a separator string being printed
+between them. However, if there is any standard input present for any of the
+test cases, a separate test run will be done for each test case.</p><p>
+If there is a risk of side-effects from a test case affecting later test cases
+you can add standard input to any one of the test cases to force the one-run-per-test-case
+mode.</p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:6:"length";s:1:"1";s:7:"penalty";d:0;s:5:"stamp";s:37:"lms.velandev.life+250922115904+0z8ofh";s:8:"idnumber";N;s:11:"timecreated";s:10:"1758542344";s:12:"timemodified";s:10:"1758542344";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:5:"hints";a:0:{}s:6:"status";s:5:"ready";s:9:"versionid";s:4:"2785";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"2771";s:16:" * latestversion";N;s:12:"customfields";a:0:{}s:14:"shownumcorrect";b:0;s:9:"testcases";a:0:{}s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"1";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:15:"33.3, 66.7, ...";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:13:"answerpreload";s:0:"";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:179:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:0:"";s:14:"validateonsave";s:1:"0";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"0";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"twig";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:0:"";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:1:"0";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"0";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:1;s:7:"student";N;s:9:"prototype";N;s:26:"initialisationerrormessage";N;s:16:"cachedfuncparams";N;s:25:"cachedevaldtemplateparams";N;s:18:"mergeduiparameters";N;s:18:"templateparamsjson";N;s:10:"parameters";N;s:8:"stepinfo";N;s:7:"options";N;s:5:"isnew";N;s:7:"context";N;s:10:"questionid";N;s:16:"answerboxcolumns";s:3:"100";}}

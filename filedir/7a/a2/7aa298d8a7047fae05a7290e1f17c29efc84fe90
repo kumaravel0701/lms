@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Category -->
+<question type="category">
+  <category>
+    <text>$course$/top/JsLv1/Js Basics/Variables</text>
+  </category>
+</question>
+
+<!-- Q1 -->
+<question type="coderunner">
+  <name><text>Q1</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare a mutable variable using <code>let</code> and assign it the value <code>"Hello"</code>. Print it.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let greeting = "Hello"; console.log(greeting); ]]></answer>
+  <testcases>
+    <testcase><expected><text>Hello</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q2 -->
+<question type="coderunner">
+  <name><text>Q2</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare an immutable variable using <code>const</code> with value <code>42</code>. Print it.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ const num = 42; console.log(num); ]]></answer>
+  <testcases>
+    <testcase><expected><text>42</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q3 -->
+<question type="coderunner">
+  <name><text>Q3</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare a variable <code>age</code> with value <code>25</code> using <code>var</code>. Print it.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ var age = 25; console.log(age); ]]></answer>
+  <testcases>
+    <testcase><expected><text>25</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q4 -->
+<question type="coderunner">
+  <name><text>Q4</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Create a variable <code>name</code> and assign your name as string. Print "My name is NAME".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let name = "Alex"; console.log("My name is " + name); ]]></answer>
+  <testcases>
+    <testcase><expected><text>My name is Alex</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q5 -->
+<question type="coderunner">
+  <name><text>Q5</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare two variables <code>a = 10</code> and <code>b = 20</code>. Print their sum.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let a = 10, b = 20; console.log(a + b); ]]></answer>
+  <testcases>
+    <testcase><expected><text>30</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q6 -->
+<question type="coderunner">
+  <name><text>Q6</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare a constant <code>PI = 3.14</code>. Print "PI value is 3.14".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ const PI = 3.14; console.log("PI value is " + PI); ]]></answer>
+  <testcases>
+    <testcase><expected><text>PI value is 3.14</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q7 -->
+<question type="coderunner">
+  <name><text>Q7</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare a variable <code>city</code> with value <code>"London"</code>. Change it to <code>"Paris"</code>. Print the final value.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let city = "London"; city = "Paris"; console.log(city); ]]></answer>
+  <testcases>
+    <testcase><expected><text>Paris</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q8 -->
+<question type="coderunner">
+  <name><text>Q8</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Create a variable <code>isStudent</code> with boolean <code>true</code>. Print it.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let isStudent = true; console.log(isStudent); ]]></answer>
+  <testcases>
+    <testcase><expected><text>true</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q9 -->
+<question type="coderunner">
+  <name><text>Q9</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare variable <code>marks = 95</code>. Print "Marks obtained: 95".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let marks = 95; console.log("Marks obtained: " + marks); ]]></answer>
+  <testcases>
+    <testcase><expected><text>Marks obtained: 95</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q10 -->
+<question type="coderunner">
+  <name><text>Q10</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Declare variable <code>x = 5</code> and <code>y = 2</code>. Print "Product is 10".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[ let x = 5, y = 2; console.log("Product is " + (x * y)); ]]></answer>
+  <testcases>
+    <testcase><expected><text>Product is 10</text></expected></testcase>
+  </testcases>
+</question>
+
+</quiz>

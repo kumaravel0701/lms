@@ -1,0 +1,24 @@
+s:1354:"<p>If 'All-or-nothing' is checked, all test cases must be satisfied
+for the submission to earn any marks. Otherwise, the mark is obtained
+by summing the marks for all the test cases that pass
+and expressing this as a fraction of the maximum possible mark.
+The per-test-case marks can be specified only if the all-or-nothing
+checkbox is unchecked. If using a template grader that awards
+part marks to test cases, 'All-or-nothing' should generally be unchecked.</p>
+
+<p>The mandatory penalty regime is a comma-separated list of penalties (each a percent)
+to apply to successive submissions. These are absolute, not cumulative. As a
+special case the last penalty can be '...' to mean "extend the previous
+two penalties as an arithmetic progression up to 100". For example,
+<code>0,5,10,30,...</code> is equivalent to <code>0,5,10,30,50,70,90,100</code>.
+If there are more submissions than defined penalties, the last value is used.
+Spaces can be used in lieu of commas as a separator.</p>
+
+<p>The default penalty regime can be set site-wide by a system administrator using
+Site administration &gt; Plugins &gt; Question types &gt; CodeRunner.</p>
+
+<p>Set the penalty regime to '0' for zero penalties on all submissions.</p>
+
+<p>The penalty regime is ignored and no penalties are applied if the quiz is
+run using the 'Adaptive (no penalties)' behaviour.</p>
+";

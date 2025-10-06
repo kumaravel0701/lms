@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+<!-- Q11 -->
+<question type="coderunner">
+  <name><text>Q11</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a number from user and print it.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const input = require('fs').readFileSync(0,'utf8').trim();
+console.log(input);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>5</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>42</text></stdin><expected><text>42</text></expected></testcase>
+    <testcase><stdin><text>100</text></stdin><expected><text>100</text></expected></testcase>
+    <testcase><stdin><text>-7</text></stdin><expected><text>-7</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q12 -->
+<question type="coderunner">
+  <name><text>Q12</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a number from user and print "Number is X".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const input = require('fs').readFileSync(0,'utf8').trim();
+console.log("Number is " + input);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>10</text></stdin><expected><text>Number is 10</text></expected></testcase>
+    <testcase><stdin><text>55</text></stdin><expected><text>Number is 55</text></expected></testcase>
+    <testcase><stdin><text>-1</text></stdin><expected><text>Number is -1</text></expected></testcase>
+    <testcase><stdin><text>200</text></stdin><expected><text>Number is 200</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q13 -->
+<question type="coderunner">
+  <name><text>Q13</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their sum.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const input = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+let a = input[0], b = input[1];
+console.log(a + b);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>10 20</text></stdin><expected><text>30</text></expected></testcase>
+    <testcase><stdin><text>-5 5</text></stdin><expected><text>0</text></expected></testcase>
+    <testcase><stdin><text>100 200</text></stdin><expected><text>300</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q14 -->
+<question type="coderunner">
+  <name><text>Q14</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print their product.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const input = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log(input[0] * input[1]);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2 3</text></stdin><expected><text>6</text></expected></testcase>
+    <testcase><stdin><text>5 5</text></stdin><expected><text>25</text></expected></testcase>
+    <testcase><stdin><text>10 0</text></stdin><expected><text>0</text></expected></testcase>
+    <testcase><stdin><text>-4 2</text></stdin><expected><text>-8</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q15 -->
+<question type="coderunner">
+  <name><text>Q15</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print "Difference is X".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log("Difference is " + (a - b));
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>10 5</text></stdin><expected><text>Difference is 5</text></expected></testcase>
+    <testcase><stdin><text>20 30</text></stdin><expected><text>Difference is -10</text></expected></testcase>
+    <testcase><stdin><text>50 50</text></stdin><expected><text>Difference is 0</text></expected></testcase>
+    <testcase><stdin><text>-5 10</text></stdin><expected><text>Difference is -15</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q16 -->
+<question type="coderunner">
+  <name><text>Q16</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a name and print "Hello NAME".</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const name = require('fs').readFileSync(0,'utf8').trim();
+console.log("Hello " + name);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>John</text></stdin><expected><text>Hello John</text></expected></testcase>
+    <testcase><stdin><text>Alice</text></stdin><expected><text>Hello Alice</text></expected></testcase>
+    <testcase><stdin><text>Sam</text></stdin><expected><text>Hello Sam</text></expected></testcase>
+    <testcase><stdin><text>Kumar</text></stdin><expected><text>Hello Kumar</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q17 -->
+<question type="coderunner">
+  <name><text>Q17</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a string and print its length.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const str = require('fs').readFileSync(0,'utf8').trim();
+console.log(str.length);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>Hello</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>World</text></stdin><expected><text>5</text></expected></testcase>
+    <testcase><stdin><text>A</text></stdin><expected><text>1</text></expected></testcase>
+    <testcase><stdin><text>JavaScript</text></stdin><expected><text>10</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q18 -->
+<question type="coderunner">
+  <name><text>Q18</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read a number and print its square.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const num = parseInt(require('fs').readFileSync(0,'utf8').trim());
+console.log(num * num);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>2</text></stdin><expected><text>4</text></expected></testcase>
+    <testcase><stdin><text>5</text></stdin><expected><text>25</text></expected></testcase>
+    <testcase><stdin><text>10</text></stdin><expected><text>100</text></expected></testcase>
+    <testcase><stdin><text>-3</text></stdin><expected><text>9</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q19 -->
+<question type="coderunner">
+  <name><text>Q19</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read two numbers and print "Quotient is X". (integer division)</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const [a, b] = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+console.log("Quotient is " + Math.floor(a / b));
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>10 2</text></stdin><expected><text>Quotient is 5</text></expected></testcase>
+    <testcase><stdin><text>9 2</text></stdin><expected><text>Quotient is 4</text></expected></testcase>
+    <testcase><stdin><text>7 3</text></stdin><expected><text>Quotient is 2</text></expected></testcase>
+    <testcase><stdin><text>20 5</text></stdin><expected><text>Quotient is 4</text></expected></testcase>
+  </testcases>
+</question>
+
+<!-- Q20 -->
+<question type="coderunner">
+  <name><text>Q20</text></name>
+  <questiontext format="html">
+    <text><![CDATA[ <p>Read three numbers and print their average.</p> ]]></text>
+  </questiontext>
+  <coderunnertype>nodejs</coderunnertype>
+  <answer><![CDATA[
+const nums = require('fs').readFileSync(0,'utf8').trim().split(/\s+/).map(Number);
+const avg = (nums[0] + nums[1] + nums[2]) / 3;
+console.log(avg);
+  ]]></answer>
+  <testcases>
+    <testcase><stdin><text>3 3 3</text></stdin><expected><text>3</text></expected></testcase>
+    <testcase><stdin><text>2 4 6</text></stdin><expected><text>4</text></expected></testcase>
+    <testcase><stdin><text>10 20 30</text></stdin><expected><text>20</text></expected></testcase>
+    <testcase><stdin><text>1 2 3</text></stdin><expected><text>2</text></expected></testcase>
+  </testcases>
+</question>
+
+</quiz>

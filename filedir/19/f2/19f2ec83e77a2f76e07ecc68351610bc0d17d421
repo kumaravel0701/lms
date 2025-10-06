@@ -1,0 +1,188 @@
+```gift
+::Q1:: What is the correct way to declare a one-dimensional array in Java? {
+    ~%100% int[] arr;
+    ~%0% int arr[];
+    ~%0% int arr;
+    ~%0% array int[];
+}
+
+::Q2:: Which of the following correctly allocates memory for an array of 5 integers? {
+    ~%100% int[] arr = new int[5];
+    ~%0% int arr = new int[5];
+    ~%0% int arr[];
+    ~%0% int arr(5);
+}
+
+::Q3:: What is the default value of elements in an int array? {
+    ~%100% 0
+    ~%0% null
+    ~%0% garbage value
+    ~%0% -1
+}
+
+::Q4:: Which index does an array in Java start from? {
+    ~%100% 0
+    ~%0% 1
+    ~%0% -1
+    ~%0% depends on JVM
+}
+
+::Q5:: What is the size of arr in int[] arr = new int[10];? {
+    ~%100% 10
+    ~%0% 9
+    ~%0% 11
+    ~%0% Unknown
+}
+
+::Q6:: Which method returns the length of an array? {
+    ~%100% arr.length
+    ~%0% arr.size()
+    ~%0% arr.length()
+    ~%0% arr.getSize()
+}
+
+::Q7:: What happens if you access an index out of array bounds? {
+    ~%100% ArrayIndexOutOfBoundsException
+    ~%0% NullPointerException
+    ~%0% Segmentation fault
+    ~%0% Nothing
+}
+
+::Q8:: Which is a valid way to initialize an array? {
+    ~%100% int[] arr = {1,2,3,4};
+    ~%0% int arr = {1,2,3,4};
+    ~%0% int arr[] = new int[4]{1,2,3,4};
+    ~%0% int[4] arr = {1,2,3,4};
+}
+
+::Q9:: Output? 
+int[] arr={10,20,30};
+System.out.print(arr[1]); {
+    ~%0% 10
+    ~%100% 20
+    ~%0% 30
+    ~%0% Error
+}
+
+::Q10:: Which loop is most used to traverse arrays? {
+    ~%100% for loop
+    ~%0% while loop
+    ~%0% switch
+    ~%0% if
+}
+
+::Q11:: Which enhanced loop is used in Java to iterate arrays easily? {
+    ~%100% for-each loop
+    ~%0% while loop
+    ~%0% do-while
+    ~%0% goto
+}
+
+::Q12:: Output? 
+int[] arr={5,10,15};
+for(int i:arr) System.out.print(i+" "); {
+    ~%100% 5 10 15
+    ~%0% 10 15 5
+    ~%0% 15 10 5
+    ~%0% Error
+}
+
+::Q13:: Which is correct declaration of a 2D array? {
+    ~%100% int[][] arr;
+    ~%0% int arr[][];
+    ~%0% int[] arr[];
+    ~%0% All of these
+}
+
+::Q14:: Which of the following creates a 2D array of 3 rows and 4 columns? {
+    ~%100% int[][] arr = new int[3][4];
+    ~%0% int arr = new int[3,4];
+    ~%0% int[3][4] arr;
+    ~%0% int arr(3)(4);
+}
+
+::Q15:: Default value of elements in a boolean array? {
+    ~%100% false
+    ~%0% true
+    ~%0% null
+    ~%0% 0
+}
+
+::Q16:: What is the output? 
+int[][] arr={{1,2},{3,4}};
+System.out.print(arr[1][0]); {
+    ~%0% 1
+    ~%100% 3
+    ~%0% 4
+    ~%0% 2
+}
+
+::Q17:: Which exception occurs for invalid array index? {
+    ~%100% ArrayIndexOutOfBoundsException
+    ~%0% NullPointerException
+    ~%0% ClassCastException
+    ~%0% IOException
+}
+
+::Q18:: Can arrays in Java have different lengths in different rows (jagged array)? {
+    ~%100% Yes
+    ~%0% No
+    ~%0% Only in C++
+    ~%0% Only in 3D arrays
+}
+
+::Q19:: What is the output? 
+int[][] arr={{1,2,3},{4,5}};
+System.out.print(arr[1][1]); {
+    ~%0% 3
+    ~%100% 5
+    ~%0% Error
+    ~%0% 2
+}
+
+::Q20:: Which is true for arrays in Java? {
+    ~%100% Arrays are objects
+    ~%0% Arrays are primitive types
+    ~%0% Arrays are pointers
+    ~%0% Arrays are classes
+}
+
+::Q21:: Which keyword is used to allocate memory for arrays? {
+    ~%100% new
+    ~%0% malloc
+    ~%0% alloc
+    ~%0% array
+}
+
+::Q22:: Output? 
+char[] arr={'a','b','c'};
+System.out.print(arr.length); {
+    ~%100% 3
+    ~%0% 2
+    ~%0% 4
+    ~%0% Error
+}
+
+::Q23:: How many dimensions can Java arrays have? {
+    ~%100% Any number
+    ~%0% Only 1
+    ~%0% Only 2
+    ~%0% Maximum 3
+}
+
+::Q24:: Output? 
+int[][][] arr=new int[2][3][4];
+System.out.print(arr.length); {
+    ~%100% 2
+    ~%0% 3
+    ~%0% 4
+    ~%0% 24
+}
+
+::Q25:: What is true about array indexes? {
+    ~%100% They are always integers
+    ~%0% They can be float
+    ~%0% They can be string
+    ~%0% They can be boolean
+}
+```

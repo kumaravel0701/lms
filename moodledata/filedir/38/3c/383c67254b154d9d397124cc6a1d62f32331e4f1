@@ -1,0 +1,178 @@
+```gift
+// JVM, JRE, JDK - 25 MCQs
+
+::Q1:: What does JVM stand for? {
+    ~%0% Java Verified Model
+    ~%100% Java Virtual Machine
+    ~%0% Java Version Manager
+    ~%0% Java Variable Machine
+}
+
+::Q2:: Which component is responsible for executing Java bytecode? {
+    ~%100% JVM
+    ~%0% JDK
+    ~%0% JRE
+    ~%0% Compiler
+}
+
+::Q3:: The JDK includes which of the following? {
+    ~%100% JRE + development tools
+    ~%0% Only JVM
+    ~%0% Only Java libraries
+    ~%0% JRE - JVM
+}
+
+::Q4:: Which is NOT a part of JRE? {
+    ~%0% JVM
+    ~%100% Compiler (javac)
+    ~%0% Java libraries
+    ~%0% Runtime classes
+}
+
+::Q5:: Which tool is provided by JDK but not JRE? {
+    ~%0% java
+    ~%100% javac
+    ~%0% JVM
+    ~%0% class loader
+}
+
+::Q6:: Which of the following correctly describes JVM? {
+    ~%100% An interpreter for bytecode
+    ~%0% A compiler of Java source code
+    ~%0% A package of APIs
+    ~%0% An IDE for Java
+}
+
+::Q7:: Which of these is platform dependent? {
+    ~%0% Java bytecode
+    ~%100% JVM implementation
+    ~%0% .java source file
+    ~%0% JDK tools
+}
+
+::Q8:: The JRE contains: {
+    ~%0% Compiler and debugger
+    ~%0% Only JVM
+    ~%100% JVM + Libraries
+    ~%0% Only documentation
+}
+
+::Q9:: Which statement about JDK is TRUE? {
+    ~%100% It is required for developing Java applications
+    ~%0% It only executes Java programs
+    ~%0% It does not contain JRE
+    ~%0% It is optional for programmers
+}
+
+::Q10:: Which of these is NOT included in JDK? {
+    ~%0% Debugger
+    ~%0% Compiler
+    ~%0% JRE
+    ~%100% CLR
+}
+
+::Q11:: Bytecode is executed by: {
+    ~%100% JVM
+    ~%0% JRE
+    ~%0% JDK
+    ~%0% Operating system directly
+}
+
+::Q12:: Which component converts Java source code into bytecode? {
+    ~%100% javac
+    ~%0% JVM
+    ~%0% JRE
+    ~%0% JIT
+}
+
+::Q13:: JIT compiler is a part of: {
+    ~%100% JVM
+    ~%0% JDK
+    ~%0% JRE libraries
+    ~%0% Java source code
+}
+
+::Q14:: Which package is automatically available without importing in JDK? {
+    ~%100% java.lang
+    ~%0% java.util
+    ~%0% java.io
+    ~%0% java.net
+}
+
+::Q15:: Which environment is required to only run (not develop) Java applications? {
+    ~%0% JDK
+    ~%100% JRE
+    ~%0% JVM alone
+    ~%0% IDE
+}
+
+::Q16:: Which JDK tool is used to generate API documentation? {
+    ~%100% javadoc
+    ~%0% javac
+    ~%0% jar
+    ~%0% java
+}
+
+::Q17:: Which command is used to execute a compiled Java class? {
+    ~%100% java ClassName
+    ~%0% javac ClassName
+    ~%0% run ClassName
+    ~%0% jvm ClassName
+}
+
+::Q18:: Which is TRUE about JVM? {
+    ~%100% Each OS has its own implementation
+    ~%0% Same binary runs on all OS
+    ~%0% It compiles .java into .class
+    ~%0% It is included only in JDK
+}
+
+::Q19:: JRE stands for: {
+    ~%0% Java Runtime Model
+    ~%0% Java Repository Engine
+    ~%100% Java Runtime Environment
+    ~%0% Java Ready Execution
+}
+
+::Q20:: Which library package is part of JRE? {
+    ~%0% javac
+    ~%0% javadoc
+    ~%100% rt.jar (runtime classes)
+    ~%0% jar tool
+}
+
+::Q21:: Which tool helps in creating a compressed archive of Java classes? {
+    ~%0% javac
+    ~%100% jar
+    ~%0% javadoc
+    ~%0% JVM
+}
+
+::Q22:: Which option best describes JDK? {
+    ~%100% Complete development kit with compiler, debugger, tools
+    ~%0% Just a JVM
+    ~%0% Just runtime classes
+    ~%0% An IDE like Eclipse
+}
+
+::Q23:: Without JVM, Java programs cannot: {
+    ~%0% Be written
+    ~%100% Be executed
+    ~%0% Be compiled
+    ~%0% Be documented
+}
+
+::Q24:: Which of the following runs faster because of JIT? {
+    ~%0% Compilation of source code
+    ~%100% Execution of bytecode
+    ~%0% Debugging process
+    ~%0% API documentation
+}
+
+::Q25:: Which of the following statements is FALSE? {
+    ~%0% JDK contains JRE
+    ~%0% JRE contains JVM
+    ~%100% JVM contains JDK
+    ~%0% JIT is part of JVM
+}
+```

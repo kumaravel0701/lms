@@ -1,0 +1,151 @@
+O:8:"stdClass":27:{s:2:"id";s:4:"1949";s:8:"category";s:3:"326";s:6:"parent";s:1:"0";s:4:"name";s:6:"Q51-14";s:12:"questiontext";s:287:"<p>Write a function using Dijkstra's algorithm to compute the shortest path distances from a source node in a weighted, directed graph represented by an adjacency list. Also, return the number of paths with the minimum distance from the source to each node. <strong>[Adobe]</strong></p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:7:"penalty";d:0;s:5:"qtype";s:10:"coderunner";s:6:"length";s:1:"1";s:5:"stamp";s:37:"lms.velandev.life+250824050414+xVQM5c";s:11:"timecreated";s:10:"1756011854";s:12:"timemodified";s:10:"1756011854";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:8:"idnumber";N;s:9:"contextid";s:3:"455";s:6:"status";s:5:"ready";s:9:"versionid";s:4:"1949";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"1935";s:14:"categoryobject";O:8:"stdClass":9:{s:2:"id";s:3:"326";s:4:"name";s:23:"M5-D1- Coding Challenge";s:9:"contextid";s:3:"455";s:4:"info";s:0:"";s:10:"infoformat";s:1:"0";s:5:"stamp";s:37:"lms.velandev.life+250824050414+WQ68Dr";s:6:"parent";s:3:"324";s:9:"sortorder";s:3:"999";s:8:"idnumber";N;}s:7:"options";O:8:"stdClass":46:{s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"0";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:1:"0";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:16:"answerboxcolumns";s:3:"100";s:13:"answerpreload";s:70:"function dijkstra(adjMatrix, source) {
+    /* type your code here */
+}";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:179:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:1408:"function dijkstra(adjList, source) {
+    const n = adjList.length;
+    const dist = Array(n).fill(Infinity);
+    const count = Array(n).fill(0);
+    const visited = Array(n).fill(false);
+
+    dist[source] = 0;
+    count[source] = 1;
+
+    for (let i = 0; i < n; i++) {
+        // Find the vertex with the minimum distance among unvisited vertices
+        let u = -1;
+        for (let j = 0; j < n; j++) {
+            if (!visited[j] && (u === -1 || dist[j] < dist[u])) {
+                u = j;
+            }
+        }
+
+        // If no vertex found (all remaining vertices are unreachable), break early
+        if (dist[u] === Infinity) {
+            break;
+        }
+
+        visited[u] = true;
+
+        // Update the distance and count for adjacent vertices
+        for (const [v, weight] of adjList[u]) {
+            if (!visited[v]) {
+                const newDist = dist[u] + weight;
+                if (newDist < dist[v]) {
+                    dist[v] = newDist;
+                    count[v] = count[u];
+                } else if (newDist === dist[v]) {
+                    count[v] += count[u];
+                }
+            }
+        }
+    }
+
+    // Format output as per the desired structure
+    const output = [];
+    for (let i = 0; i < n; i++) {
+        output.push(`Node ${i}: Distance = ${dist[i]}, Paths = ${count[i]}`);
+    }
+
+    return output;
+}";s:14:"validateonsave";s:1:"1";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"1";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"None";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:2:"{}";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:5:"10240";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"1";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:0;s:9:"testcases";a:5:{i:0;O:8:"stdClass":11:{s:2:"id";s:4:"1169";s:10:"questionid";s:4:"1949";s:8:"testtype";s:1:"0";s:8:"testcode";s:280:"const adjList = [
+    [[1, 10], [3, 30], [4, 100]],
+    [[0, 10], [2, 50]],
+    [[1, 50], [3, 20], [4, 10]],
+    [[0, 30], [2, 20], [4, 60]],
+    [[0, 100], [2, 10], [3, 60]]
+];
+const source = 1;
+const result = dijkstra(adjList, source);
+result.forEach(line => console.log(line));";s:5:"stdin";s:0:"";s:8:"expected";s:163:"Node 0: Distance = 10, Paths = 1
+Node 1: Distance = 0, Paths = 1
+Node 2: Distance = 50, Paths = 1
+Node 3: Distance = 40, Paths = 1
+Node 4: Distance = 60, Paths = 1";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"1";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:1;O:8:"stdClass":11:{s:2:"id";s:4:"1170";s:10:"questionid";s:4:"1949";s:8:"testtype";s:1:"0";s:8:"testcode";s:312:"const adjList = [
+    [[1, 5]],
+    [[0, 5], [2, 10], [5, 15]],
+    [[1, 10], [3, 20]],
+    [[2, 20], [4, 25]],
+    [[3, 25], [5, 30]],
+    [[1, 15], [4, 30], [6, 35]],
+    [[5, 35], [7, 40]],
+    [[6, 40]]
+];
+const source = 3;
+const result = dijkstra(adjList, source);
+result.forEach(line => console.log(line));";s:5:"stdin";s:0:"";s:8:"expected";s:263:"Node 0: Distance = 35, Paths = 1
+Node 1: Distance = 30, Paths = 1
+Node 2: Distance = 20, Paths = 1
+Node 3: Distance = 0, Paths = 1
+Node 4: Distance = 25, Paths = 1
+Node 5: Distance = 45, Paths = 1
+Node 6: Distance = 80, Paths = 1
+Node 7: Distance = 120, Paths = 1";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:2;O:8:"stdClass":11:{s:2:"id";s:4:"1171";s:10:"questionid";s:4:"1949";s:8:"testtype";s:1:"0";s:8:"testcode";s:353:"const adjList = [
+    [[1, 3], [3, 5]], 
+    [[0, 3], [2, 2]], 
+    [[1, 2], [3, 1], [4, 4]], 
+    [[0, 5], [2, 1], [4, 2], [5, 1], [6, 6]], 
+    [[2, 4], [3, 2], [5, 1]], 
+    [[3, 1], [4, 1], [7, 3]], 
+    [[3, 6], [7, 4]], 
+    [[5, 3], [6, 4]]
+];
+const source = 2;
+const result = dijkstra(adjList, source);
+result.forEach(line => console.log(line));";s:5:"stdin";s:0:"";s:8:"expected";s:255:"Node 0: Distance = 5, Paths = 1
+Node 1: Distance = 2, Paths = 1
+Node 2: Distance = 0, Paths = 1
+Node 3: Distance = 1, Paths = 1
+Node 4: Distance = 3, Paths = 2
+Node 5: Distance = 2, Paths = 1
+Node 6: Distance = 7, Paths = 1
+Node 7: Distance = 5, Paths = 1";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"HIDE";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:3;O:8:"stdClass":11:{s:2:"id";s:4:"1172";s:10:"questionid";s:4:"1949";s:8:"testtype";s:1:"0";s:8:"testcode";s:248:"const adjList = [
+    [[1, 3], [3, 5]],
+    [[0, 3], [2, 2]],
+    [[1, 2], [3, 1], [4, 3]],
+    [[0, 5], [2, 1], [4, 2]],
+    [[2, 3], [3, 2]]
+];
+const source = 2;
+const result = dijkstra(adjList, source);
+result.forEach(line => console.log(line));";s:5:"stdin";s:0:"";s:8:"expected";s:159:"Node 0: Distance = 5, Paths = 1
+Node 1: Distance = 2, Paths = 1
+Node 2: Distance = 0, Paths = 1
+Node 3: Distance = 1, Paths = 1
+Node 4: Distance = 3, Paths = 2";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}i:4;O:8:"stdClass":11:{s:2:"id";s:4:"1173";s:10:"questionid";s:4:"1949";s:8:"testtype";s:1:"0";s:8:"testcode";s:253:"const adjList = [
+    [[1, 3], [3, 5]], 
+    [[0, 3], [2, 2]], 
+    [[1, 2], [3, 1], [4, 3]], 
+    [[0, 5], [2, 1], [4, 2]], 
+    [[2, 3], [3, 2]] 
+];
+const source = 0;
+const result = dijkstra(adjList, source);
+result.forEach(line => console.log(line));";s:5:"stdin";s:0:"";s:8:"expected";s:159:"Node 0: Distance = 0, Paths = 1
+Node 1: Distance = 3, Paths = 1
+Node 2: Distance = 5, Paths = 1
+Node 3: Distance = 5, Paths = 1
+Node 4: Distance = 7, Paths = 1";s:5:"extra";s:0:"";s:12:"useasexample";s:1:"0";s:7:"display";s:4:"SHOW";s:14:"hiderestiffail";s:1:"0";s:4:"mark";s:5:"1.000";}}}s:5:"hints";a:0:{}s:9:"prototype";O:25:"qtype_coderunner_question":86:{s:2:"id";s:4:"2785";s:8:"category";s:1:"2";s:9:"contextid";s:1:"1";s:6:"parent";s:1:"0";s:5:"qtype";O:16:"qtype_coderunner":1:{s:14:" * fileoptions";a:3:{s:7:"subdirs";b:1;s:8:"maxfiles";i:-1;s:8:"maxbytes";i:0;}}s:4:"name";s:24:"BUILTIN_PROTOTYPE_nodejs";s:12:"questiontext";s:536:"<p>A JavaScript question type, run using nodejs. The
+test program to be executed starts with the student answer. That is followed
+by each of the test case codes in turn, with a separator string being printed
+between them. However, if there is any standard input present for any of the
+test cases, a separate test run will be done for each test case.</p><p>
+If there is a risk of side-effects from a test case affecting later test cases
+you can add standard input to any one of the test cases to force the one-run-per-test-case
+mode.</p>";s:18:"questiontextformat";s:1:"1";s:15:"generalfeedback";s:0:"";s:21:"generalfeedbackformat";s:1:"1";s:11:"defaultmark";d:1;s:6:"length";s:1:"1";s:7:"penalty";d:0;s:5:"stamp";s:37:"lms.velandev.life+250922115904+0z8ofh";s:8:"idnumber";N;s:11:"timecreated";s:10:"1758542344";s:12:"timemodified";s:10:"1758542344";s:9:"createdby";s:1:"2";s:10:"modifiedby";s:1:"2";s:5:"hints";a:0:{}s:6:"status";s:5:"ready";s:9:"versionid";s:4:"2785";s:7:"version";s:1:"1";s:19:"questionbankentryid";s:4:"2771";s:16:" * latestversion";N;s:12:"customfields";a:0:{}s:14:"shownumcorrect";b:0;s:9:"testcases";a:0:{}s:14:"coderunnertype";s:6:"nodejs";s:13:"prototypetype";s:1:"1";s:12:"allornothing";s:1:"1";s:13:"penaltyregime";s:15:"33.3, 66.7, ...";s:8:"precheck";s:1:"0";s:9:"hidecheck";s:1:"0";s:10:"showsource";s:1:"0";s:14:"answerboxlines";s:2:"18";s:13:"answerpreload";s:0:"";s:11:"globalextra";s:0:"";s:6:"useace";s:1:"1";s:13:"resultcolumns";N;s:8:"template";s:179:"{{ STUDENT_ANSWER }}
+
+var SEPARATOR = "#<ab@17943918#@>#";
+
+{% for TEST in TESTCASES %}
+{{ TEST.testcode }}
+{% if not loop.last %}
+console.log(SEPARATOR);
+{% endif %}
+{% endfor %}";s:20:"iscombinatortemplate";s:1:"1";s:19:"allowmultiplestdins";s:1:"0";s:6:"answer";s:0:"";s:14:"validateonsave";s:1:"0";s:14:"testsplitterre";s:23:"|#<ab@17943918#@>#\n|ms";s:8:"language";s:6:"nodejs";s:7:"acelang";N;s:7:"sandbox";N;s:6:"grader";s:14:"EqualityGrader";s:16:"cputimelimitsecs";N;s:10:"memlimitmb";s:4:"1000";s:13:"sandboxparams";s:35:"{"sourcefilename": "__tester__.js"}";s:14:"templateparams";s:0:"";s:19:"hoisttemplateparams";s:1:"0";s:19:"extractcodefromjson";s:1:"1";s:18:"templateparamslang";s:4:"twig";s:24:"templateparamsevalpertry";s:1:"0";s:19:"templateparamsevald";s:0:"";s:7:"twigall";s:1:"0";s:8:"uiplugin";s:3:"ace";s:12:"uiparameters";s:0:"";s:11:"attachments";s:1:"0";s:19:"attachmentsrequired";s:1:"0";s:11:"maxfilesize";s:1:"0";s:14:"filenamesregex";s:0:"";s:16:"filenamesexplain";s:0:"";s:15:"displayfeedback";s:1:"0";s:13:"giveupallowed";s:1:"0";s:14:"prototypeextra";N;s:7:"answers";a:0:{}s:9:"customise";b:1;s:7:"student";N;s:9:"prototype";N;s:26:"initialisationerrormessage";N;s:16:"cachedfuncparams";N;s:25:"cachedevaldtemplateparams";N;s:18:"mergeduiparameters";N;s:18:"templateparamsjson";N;s:10:"parameters";N;s:8:"stepinfo";N;s:7:"options";N;s:5:"isnew";N;s:7:"context";N;s:10:"questionid";N;s:16:"answerboxcolumns";s:3:"100";}}

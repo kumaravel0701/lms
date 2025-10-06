@@ -1,0 +1,178 @@
+```gift
+// Java Basics - 25 MCQs
+
+::Q1:: What does JVM stand for? {
+    ~%0% Java Variable Machine
+    ~%0% Java Virtual Model
+    ~%100% Java Virtual Machine
+    ~%0% Java Verified Machine
+}
+
+::Q2:: Which component is responsible for compiling Java source code into bytecode? {
+    ~%0% JVM
+    ~%100% JDK
+    ~%0% JRE
+    ~%0% CLR
+}
+
+::Q3:: Which of the following is NOT part of JRE? {
+    ~%100% Compiler (javac)
+    ~%0% Java API classes
+    ~%0% JVM
+    ~%0% Runtime libraries
+}
+
+::Q4:: Which keyword is used to define a class in Java? {
+    ~%0% define
+    ~%100% class
+    ~%0% struct
+    ~%0% ClassName
+}
+
+::Q5:: What is the extension of compiled Java files? {
+    ~%0% .java
+    ~%100% .class
+    ~%0% .exe
+    ~%0% .obj
+}
+
+::Q6:: Which method is the entry point of a Java program? {
+    ~%0% start()
+    ~%0% run()
+    ~%100% main()
+    ~%0% execute()
+}
+
+::Q7:: Which of these is NOT a valid data type in Java? {
+    ~%0% int
+    ~%0% float
+    ~%0% char
+    ~%100% real
+}
+
+::Q8:: Which data type is used to store true/false values in Java? {
+    ~%100% boolean
+    ~%0% int
+    ~%0% String
+    ~%0% char
+}
+
+::Q9:: What is the default value of an uninitialized int variable in Java (class level)? {
+    ~%0% 1
+    ~%0% null
+    ~%100% 0
+    ~%0% undefined
+}
+
+::Q10:: Which operator is used for string concatenation in Java? {
+    ~%100% +
+    ~%0% &
+    ~%0% concat
+    ~%0% join
+}
+
+::Q11:: What will be the result of 5/2 in Java (int division)? {
+    ~%100% 2
+    ~%0% 2.5
+    ~%0% 3
+    ~%0% Error
+}
+
+::Q12:: Which of the following is a logical operator in Java? {
+    ~%0% +
+    ~%0% -
+    ~%100% &&
+    ~%0% %
+}
+
+::Q13:: Which loop is guaranteed to execute at least once? {
+    ~%0% for
+    ~%0% while
+    ~%100% do-while
+    ~%0% foreach
+}
+
+::Q14:: Which statement is used to terminate a loop in Java? {
+    ~%100% break
+    ~%0% continue
+    ~%0% exit
+    ~%0% return
+}
+
+::Q15:: Which keyword is used to skip the current iteration of a loop? {
+    ~%0% break
+    ~%100% continue
+    ~%0% skip
+    ~%0% next
+}
+
+::Q16:: Which of the following is a one-dimensional array declaration in Java? {
+    ~%0% int arr()
+    ~%0% int arr
+    ~%100% int[] arr
+    ~%0% array int arr
+}
+
+::Q17:: What is the index of the first element in a Java array? {
+    ~%100% 0
+    ~%0% 1
+    ~%0% -1
+    ~%0% Depends on JVM
+}
+
+::Q18:: Which statement correctly creates a 2D array in Java? {
+    ~%0% int arr[] = new int[3];
+    ~%0% int arr[3][3];
+    ~%100% int[][] arr = new int[3][3];
+    ~%0% array arr(3,3);
+}
+
+::Q19:: Which class is used for reading input from the user in Java? {
+    ~%0% System
+    ~%0% Input
+    ~%100% Scanner
+    ~%0% Reader
+}
+
+::Q20:: What package must be imported to use Scanner class? {
+    ~%100% java.util
+    ~%0% java.io
+    ~%0% java.lang
+    ~%0% java.net
+}
+
+::Q21:: Which of the following is NOT a valid access modifier in Java? {
+    ~%0% public
+    ~%0% private
+    ~%0% protected
+    ~%100% friendly
+}
+
+::Q22:: Which symbol is used to denote a single-line comment in Java? {
+    ~%100% //
+    ~%0% #
+    ~%0% <!-- -->
+    ~%0% %%
+}
+
+::Q23:: Which keyword is used to create an object in Java? {
+    ~%0% class
+    ~%100% new
+    ~%0% object
+    ~%0% create
+}
+
+::Q24:: Which among the following is a wrapper class in Java? {
+    ~%0% string
+    ~%100% Integer
+    ~%0% char
+    ~%0% float
+}
+
+::Q25:: Which of these is NOT a feature of Java? {
+    ~%0% Object-Oriented
+    ~%0% Platform Independent
+    ~%0% Secure
+    ~%100% Pointer Arithmetic
+}
+```

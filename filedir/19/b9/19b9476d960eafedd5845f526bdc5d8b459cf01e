@@ -1,0 +1,178 @@
+```gift
+// Variables, Data Types, Typecasting - 25 MCQs
+
+::Q1:: Which keyword is used to declare a variable in Java? {
+    ~%0% var
+    ~%0% let
+    ~%100% (No keyword, just type and name)
+    ~%0% define
+}
+
+::Q2:: Which of the following is a valid variable name in Java? {
+    ~%100% studentAge
+    ~%0% 1student
+    ~%0% student-age
+    ~%0% student age
+}
+
+::Q3:: What is the default value of a boolean variable in a class? {
+    ~%100% false
+    ~%0% true
+    ~%0% 0
+    ~%0% null
+}
+
+::Q4:: Which of these is NOT a primitive data type in Java? {
+    ~%0% int
+    ~%0% boolean
+    ~%0% char
+    ~%100% String
+}
+
+::Q5:: How many primitive data types are there in Java? {
+    ~%0% 6
+    ~%0% 10
+    ~%100% 8
+    ~%0% 12
+}
+
+::Q6:: Which data type is used to store a single 16-bit Unicode character? {
+    ~%100% char
+    ~%0% String
+    ~%0% byte
+    ~%0% boolean
+}
+
+::Q7:: Which data type is best for storing decimal values precisely like currency? {
+    ~%0% float
+    ~%100% double
+    ~%0% int
+    ~%0% char
+}
+
+::Q8:: Which data type can store the largest integer values? {
+    ~%0% int
+    ~%100% long
+    ~%0% short
+    ~%0% byte
+}
+
+::Q9:: Which is the size of an int in Java? {
+    ~%100% 4 bytes
+    ~%0% 2 bytes
+    ~%0% 8 bytes
+    ~%0% Platform dependent
+}
+
+::Q10:: Which literal is used to define a float value in Java? {
+    ~%100% f or F
+    ~%0% d or D
+    ~%0% l or L
+    ~%0% No suffix
+}
+
+::Q11:: Which data type is default for decimal numbers in Java? {
+    ~%0% float
+    ~%100% double
+    ~%0% BigDecimal
+    ~%0% int
+}
+
+::Q12:: What is the range of byte in Java? {
+    ~%0% -255 to 255
+    ~%100% -128 to 127
+    ~%0% 0 to 255
+    ~%0% -512 to 511
+}
+
+::Q13:: Which statement is TRUE about type casting? {
+    ~%100% Converting from smaller to larger type is implicit
+    ~%0% Converting from larger to smaller type is implicit
+    ~%0% Casting is not possible in Java
+    ~%0% Only objects can be casted
+}
+
+::Q14:: Converting int to double in Java is an example of: {
+    ~%100% Widening
+    ~%0% Narrowing
+    ~%0% Boxing
+    ~%0% Unboxing
+}
+
+::Q15:: Converting double to int in Java requires: {
+    ~%0% Automatic conversion
+    ~%100% Explicit casting
+    ~%0% No conversion needed
+    ~%0% JVM optimization
+}
+
+::Q16:: Which code correctly converts int x = 10 to double? {
+    ~%100% double y = x;
+    ~%0% double y = (int)x;
+    ~%0% int y = (double)x;
+    ~%0% float y = (char)x;
+}
+
+::Q17:: Which code correctly converts double d = 9.8 to int? {
+    ~%100% int x = (int)d;
+    ~%0% int x = d;
+    ~%0% int x = cast(d);
+    ~%0% int x = convert(d);
+}
+
+::Q18:: Which of these is NOT a valid type of casting? {
+    ~%0% Widening
+    ~%0% Narrowing
+    ~%100% Flattening
+    ~%0% Boxing
+}
+
+::Q19:: What is output of (int) 5.9 in Java? {
+    ~%100% 5
+    ~%0% 6
+    ~%0% 5.9
+    ~%0% Error
+}
+
+::Q20:: Which is TRUE about type promotion in expressions? {
+    ~%100% byte + byte -> int
+    ~%0% int + int -> byte
+    ~%0% char + char -> char
+    ~%0% short + short -> short
+}
+
+::Q21:: Which is wrapper class for int? {
+    ~%0% Float
+    ~%100% Integer
+    ~%0% String
+    ~%0% Long
+}
+
+::Q22:: What is autoboxing in Java? {
+    ~%0% Converting object to primitive
+    ~%100% Converting primitive to wrapper object
+    ~%0% Converting wrapper to string
+    ~%0% Converting int to char
+}
+
+::Q23:: What is unboxing in Java? {
+    ~%100% Converting wrapper object to primitive
+    ~%0% Converting primitive to wrapper object
+    ~%0% Converting object to string
+    ~%0% Converting float to double
+}
+
+::Q24:: Which is the default value of a local variable inside a method? {
+    ~%0% 0
+    ~%0% null
+    ~%0% false
+    ~%100% No default value (must be initialized)
+}
+
+::Q25:: Which of the following is NOT a legal assignment? {
+    ~%0% double d = 10;
+    ~%100% int x = 9.9;
+    ~%0% float f = 5.0f;
+    ~%0% char c = 'A';
+}
+```

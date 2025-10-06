@@ -1,0 +1,27 @@
+s:1385:"<p>Set what button are available for students to
+submit answers. Usually at least a Check button is shown but this can be
+hidden (e.g. for use in Deferred Feedback contexts) if <i>Hide check</i> is checked.</p>
+
+<p>If Precheck is enabled, students will have an extra button to the left of the
+usual check button to give them a penalty-free run to check their code against
+a subset of the question test cases. Then</p>
+
+<ul>
+<li>If 'Empty' is selected, a single run
+will be done with the per-test template using a testcase in which all the
+fields (testcode, stdin, expected, etc) are the empty string. Non-empty output
+is deemed to be a precheck failure. Use with caution:
+some question types will not handle this correctly, e.g. write-a-program questions
+that generate output.
+</li><li>If 'Examples' is selected, the code will
+be tested against all the tests for which 'use_as_example' has been checked.
+</li><li>If 'Selected' is selected, an extra UI element is added to each test case
+to allow the author to select a specific subset of the tests.
+</li><li>If 'All' is selected, all test cases are run (although their behaviour might
+be different from the normal Check, if the template code so chooses).
+</li></ul>
+
+<p>The template can check whether or not the run is a precheck run using the
+Twig parameter {{ IS_PRECHECK }}, which is "1" during precheck runs and
+"0" otherwise.</p>
+";
